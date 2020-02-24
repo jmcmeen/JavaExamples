@@ -2,18 +2,25 @@
 package edu.northeaststate.dungeonsanddragons;
 
 public class Monster {
-    private int hp;
+    private int hitPoints;
 
-    public int getHp(){
-        return this.hp;
+    public Monster(){
     }
 
-    public void setHp(int hp){
-        this.hp = hp;
+    public Monster(int hitPoints){
+        this.hitPoints = hitPoints;
+    }
+
+    public int getHitPoints(){
+        return this.hitPoints;
+    }
+
+    public void setHitPoints(int hitPoints){
+        this.hitPoints = hitPoints;
     }
 
     public void hit(int damage){
-        this.hp -= damage;
+        this.hitPoints -= damage;
     }
 }
 
