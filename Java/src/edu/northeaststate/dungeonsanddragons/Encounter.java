@@ -8,12 +8,12 @@ public class Encounter {
 
     //Overloaded constructor
     public Encounter(String name){
-        monsters = new ArrayList<Monster>();
+        this.monsters = new ArrayList<Monster>();
         this.encounterName = name;
     }
 
     //addMonster function takes input for Monster, creates a Monster object, and adds it to monsters attribute
     public void addMonster(String monsterName, int hitPoints){
-        monsters.add(new Monster(monsterName, hitPoints));
+        this.monsters.add(  new Monster(monsterName, hitPoints) );
     }
 }
