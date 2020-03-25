@@ -14,14 +14,14 @@ public class ReferenceExample02 {
         Monster FireGiant = FrostGiant;
 
         //Both references point to the same memory location, making a change to one will affect both
-        FrostGiant.hit(25);
+        FrostGiant.takeDamage(25);
 
         System.out.println("The Frost Giant's hp is: " + FrostGiant.getHitPoints());
         System.out.println("The Fire Giant's hp is: " + FireGiant.getHitPoints() + "\n");
 
         //Hitting the FireGiant will also cause a change in FrostGiant because they both point to the same place in
         //memory. You have to use the new keyword to get new objects in memory
-        FireGiant.hit(25);
+        FireGiant.takeDamage(25);
 
         System.out.println("The Frost Giant's hp is: " + FrostGiant.getHitPoints());
         System.out.println("The Fire Giant's hp is: " + FireGiant.getHitPoints() + "\n");
@@ -34,7 +34,7 @@ public class ReferenceExample02 {
         System.out.println("The Fire Giant's hp is:" + FireGiant.getHitPoints() + "\n");
 
         //Making changes to one will not affect the other
-        FireGiant.hit(1);
+        FireGiant.takeDamage(1);
 
         System.out.println("The Frost Giant's hp is:" + FrostGiant.getHitPoints());
         System.out.println("The Fire Giant's hp is:" + FireGiant.getHitPoints());
