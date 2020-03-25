@@ -23,7 +23,7 @@ public class ArrayListToStringTest{
 
         //Or manually loop through each test in tests ArrayList giving you more control of output
         for(Test t: tests){
-            System.out.println(t.toString()); //each test on a line
+            System.out.print(t.toString()); //each test on a line
         }
     }
 }

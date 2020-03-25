@@ -16,4 +16,8 @@ public class Encounter {
     public void addMonster(String monsterName, int hitPoints){
         this.monsters.add(  new Monster(monsterName, hitPoints) );
     }
+
+    public void addMonster(Monster monster){
+        this.monsters.add(monster);
+    }
 }
