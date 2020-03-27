@@ -90,21 +90,15 @@ public class Monster {
     }
 
     /**
-     * Method description: Subtracts damagePoints from Monster hitPoints
+     * Method description: Subtracts damage from Monster hitPoints
      * Date: Mar 24, 2020
-     * Parameters: int damagePoints
+     * Parameters: String name
      * Return type: void
      */
-    public void takeDamage(int damagePoints){
-        this.hitPoints -= damagePoints;
+    public void takeDamage(int damage){
+        this.hitPoints -= damage;
     }
 
-    /**
-     * Method description: Overrides toString method
-     * Date: Mar 24, 2020
-     * Parameters: NA
-     * Return type: String
-     */
     public String toString(){
         StringBuilder sb = new StringBuilder();
         sb.append("Monster [name=");
@@ -116,4 +110,5 @@ public class Monster {
         return sb.toString();
     }
 }
+
 

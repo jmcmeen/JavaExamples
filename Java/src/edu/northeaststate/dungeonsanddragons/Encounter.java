@@ -28,7 +28,7 @@ import java.util.ArrayList;
  */
 public class Encounter {
     private ArrayList<Monster> monsters;
-    public String encounterName;
+    private String encounterName;
 
     /**
      * Method description: Partial parameterized constructor. Sets name attribute and allocates memory for ArrayList of

@@ -26,13 +26,11 @@ public class StaticMethodExample02 {
         System.out.println(parsedInteger + " is a positive integer.");
         System.out.println("------------------------------------------");
 
-        //Some static classes will let you instantiate an object of that class, but it is not necessary
-        Helper myHelper = new Helper();
         System.out.print("Enter a positive double: ");
         tempInput = keyboard.nextLine();
 
         //while the parsed double is not positive, keep getting input
-        while( (parsedDouble = myHelper.isPositiveDouble(tempInput)) == -1 ){
+        while( (parsedDouble = Helper.isPositiveDouble(tempInput)) == -1 ){
             System.out.println(tempInput + " is not a positive double.");
             System.out.print("Enter a positive double: ");
             tempInput = keyboard.nextLine();

@@ -14,8 +14,8 @@ public class ArrayListToStringTest{
         //Notice in the output the placement of the brackets, created by ArrayList's toString
         ArrayList<Test> tests = new ArrayList<>();
 
-        tests.add(new Test());
-        tests.add(new Test());
+        tests.add( new Test() );
+        tests.add( new Test() );
 
         System.out.println(tests);
 
@@ -23,7 +23,7 @@ public class ArrayListToStringTest{
 
         //Or manually loop through each test in tests ArrayList giving you more control of output
         for(Test t: tests){
-            System.out.print(t.toString()); //each test on a line
+            System.out.print(t.toString() + " "); //each test on a line
         }
     }
 }

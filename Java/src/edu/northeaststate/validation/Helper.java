@@ -26,7 +26,7 @@ package edu.northeaststate.validation;
 public class Helper {
     /**
      * Method description: Takes a string and converts it to a positive integer,
-     * if input string is not a positive integer (text or number < 1) the method will return a -1
+     * if input string is not a positive integer (text or integer < 1) the method will return a -1
      * Date: Mar 24, 2020
      * Parameters: String testString
      * Return type: int
@@ -50,7 +50,7 @@ public class Helper {
 
     /**
      * Method description: Takes a string and converts it to a positive double,
-     * if input string is not a positive double (text or number not greater than 0) the method will return a -1
+     * if input string is not a positive double (text or number not greater than 0) the method will return a -1.0
      * Date: Mar 24, 2020
      * Parameters: String testString
      * Return type: double

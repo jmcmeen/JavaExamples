@@ -23,6 +23,7 @@ public class Library {
         return books;
     }
 
+    //shallow copy
     public void setBooks(ArrayList<Book> books) {
         this.books = books;
     }
@@ -32,16 +33,19 @@ public class Library {
     }
 
     public void addBook(String name, String ISBN, String author){
+
         this.books.add( new Book(name, ISBN, author) );
     }
 
+    //deep copy
     public void addBook(Book b){
         this.books.add(new Book(b));
     }
 
+    //deep copy
     public void addBooks(ArrayList<Book> books){
         for(Book b: books){
-            this.books.add(new Book(b));
+            this.books.add( new Book(b) );
         }
     }
 
