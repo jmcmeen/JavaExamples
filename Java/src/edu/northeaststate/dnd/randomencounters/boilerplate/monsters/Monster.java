@@ -30,15 +30,6 @@ public class Monster {
     protected int hitPoints;
 
     /**
-     * Method description: Default constructor
-     * Date: Apr 5, 2020
-     * Parameters: None
-     * Return type: None
-     */
-    public Monster(){
-    }
-
-    /**
      * Method description: Parameterized constructor
      * Date: Apr 5, 2020
      * Parameters: String name, int hitPoints
@@ -88,17 +79,6 @@ public class Monster {
     public void setName(String name){
         this.name = name;
     }
-
-    /**
-     * Method description: Subtracts damage from Monster hitPoints
-     * Date: Apr 5, 2020
-     * Parameters: String name
-     * Return type: void
-     */
-    public void takeDamage(int damage){
-        this.hitPoints -= damage;
-    }
-
 
     /**
      * Method description: Build a string that represents a Monster

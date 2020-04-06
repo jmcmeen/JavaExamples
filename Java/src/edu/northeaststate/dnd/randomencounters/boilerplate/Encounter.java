@@ -20,14 +20,14 @@ import java.util.ArrayList;
  * - Partial parameterized constructor (creates empty list of Monster objects)
  * - Public methods: addMonster
  * </b>
- * <hr>
+ * <hr>n
  * Date created: Apr 5, 2020
  * <hr>
  * @author John McMeen
  */
 public class Encounter {
     private ArrayList<Monster> monsters;
-    private String encounterName;
+    private String name;
 
     /**
      * Method description: Partial parameterized constructor. Sets name attribute and allocates memory for ArrayList of
@@ -37,7 +37,7 @@ public class Encounter {
      * Return type: NA
      */
     public Encounter(String name){
-        this.encounterName = name;
+        this.name = name;
         this.monsters = new ArrayList<>();
     }
 
@@ -59,8 +59,8 @@ public class Encounter {
      */
     @Override
     public String toString() {
-        String s = "Encounter[encounterName= " +
-                    this.encounterName +
+        String s = "Encounter[name= " +
+                    this.name +
                    "]\n" +
                    "monsters= \n";
 
