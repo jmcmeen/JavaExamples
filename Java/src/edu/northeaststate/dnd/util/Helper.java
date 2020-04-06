@@ -8,7 +8,7 @@
  * Creation date: Mar 24, 2020
  * -------------------------------------------------
  */
-package edu.northeaststate.validation;
+package edu.northeaststate.dnd.util;
 
 /**
  * <b>

@@ -1,8 +1,8 @@
-package edu.northeaststate.drivers;
+package edu.northeaststate.exampledrivers;
 
-import edu.northeaststate.dungeonsanddragons.SimpleDiceRoller;
+import edu.northeaststate.dnd.util.SimpleDiceRoller;
 
-public class StaticMethodExample {
+public class StaticMethodExample01 {
     public static void main(String[] args) {
         //Classes with static methods do no require you to create an object first
 
@@ -14,7 +14,6 @@ public class StaticMethodExample {
         }
 
         System.out.println();
-
         //You can create an object of that class, but it is not necessary
         SimpleDiceRoller d = new SimpleDiceRoller();
         for (int i = 0; i < 5; i++) {

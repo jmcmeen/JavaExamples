@@ -1,7 +1,7 @@
-package edu.northeaststate.drivers;
+package edu.northeaststate.exampledrivers;
 
 import java.util.Scanner;
-import edu.northeaststate.validation.Helper;
+import edu.northeaststate.dnd.util.Helper;
 
 public class StaticMethodExample02 {
     public static void main(String[] args) {

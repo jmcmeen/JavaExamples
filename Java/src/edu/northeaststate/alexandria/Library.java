@@ -37,7 +37,7 @@ public class Library {
         this.books.add( new Book(name, ISBN, author) );
     }
 
-    //deep copy
+    //deep copy and copy constructor
     public void addBook(Book b){
         this.books.add(new Book(b));
     }

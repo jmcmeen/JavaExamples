@@ -10,7 +10,7 @@
  * -------------------------------------------------
  */
 
-package edu.northeaststate.dungeonsanddragons;
+package edu.northeaststate.dnd.encounterbuilder;
 
 /**
  * <b>

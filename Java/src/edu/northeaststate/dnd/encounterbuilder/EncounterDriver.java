@@ -9,15 +9,13 @@
  * Creation date: Mar 24, 2020
  * -------------------------------------------------
  */
-
-package edu.northeaststate.dungeonsanddragons;
+package edu.northeaststate.dnd.encounterbuilder;
 
 import java.util.ArrayList;
 
 /**
  * <b>
- * Purpose:
- * - Contains for method main application
+ * Purpose: Contains main method for the EncounterDriver application
  * </b>
  * <hr>
  * Date created: Mar 24, 2020
@@ -26,7 +24,7 @@ import java.util.ArrayList;
  */
 public class EncounterDriver {
     /**
-     * Method description: Main method for D&D Encounters Application
+     * Method description: Creates some encounters and adds some Monsters using addMonster method in Encounter
      * Date: Mar 24, 2020
      * Parameters: String[] args (unused)
      * Return type: void

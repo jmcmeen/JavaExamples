@@ -1,6 +1,6 @@
-package edu.northeaststate.drivers;
+package edu.northeaststate.exampledrivers;
 
-import edu.northeaststate.dungeonsanddragons.Monster;
+import edu.northeaststate.dnd.encounterbuilder.Monster;
 
 public class ConstructorExample {
     public static void main(String[] args) {

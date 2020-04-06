@@ -10,7 +10,8 @@
  * -------------------------------------------------
  */
 
-package edu.northeaststate.dungeonsanddragons;
+package edu.northeaststate.dnd.encounterbuilder;
+
 import java.util.ArrayList;
 
 /**
@@ -26,7 +27,7 @@ import java.util.ArrayList;
  * <hr>
  * @author John McMeen
  */
-public class Encounter {
+public class Encounter{
     private ArrayList<Monster> monsters;
     private String encounterName;
 
@@ -51,6 +52,7 @@ public class Encounter {
      * Return type: void
      */
     public void addMonster(String monsterName, int hitPoints){
-        this.monsters.add(  new Monster(monsterName, hitPoints) );
+        Monster m = new Monster(monsterName, hitPoints);
+        this.monsters.add( m  );
     }
 }
