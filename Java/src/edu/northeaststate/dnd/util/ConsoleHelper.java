@@ -12,6 +12,7 @@
 package edu.northeaststate.dnd.util;
 
 /* Imports */
+
 import java.util.Scanner;
 
 /**
@@ -22,6 +23,7 @@ import java.util.Scanner;
  * <hr>
  * Date created: Apr 5, 2020
  * <hr>
+ *
  * @author John McMeen
  */
 public class ConsoleHelper {
@@ -31,7 +33,7 @@ public class ConsoleHelper {
      * Parameters: None
      * Return type: None
      */
-    public static void pressEnterToContinue(){
+    public static void pressEnterToContinue() {
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Press <ENTER> to continue.");
         keyboard.nextLine();

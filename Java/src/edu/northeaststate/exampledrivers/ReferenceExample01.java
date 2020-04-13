@@ -1,7 +1,7 @@
 package edu.northeaststate.exampledrivers;
 
 public class ReferenceExample01 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //Create an int
         int a = 42;
 
@@ -12,7 +12,7 @@ public class ReferenceExample01 {
 
         System.out.println("b = " + b);
 
-        a = a -5;
+        a = a - 5;
 
         System.out.println("a = " + a);
         System.out.println("b = " + b);

@@ -22,6 +22,7 @@ package edu.northeaststate.dnd.randomencounters.boilerplate.monsters;
  * <hr>
  * Date created: Apr 5, 2020
  * <hr>
+ *
  * @author John McMeen
  */
 public class Monster {
@@ -35,7 +36,7 @@ public class Monster {
      * Parameters: String name, int hitPoints
      * Return type: None
      */
-    public Monster(String name, int hitPoints){
+    public Monster(String name, int hitPoints) {
         this.name = name;
         this.hitPoints = hitPoints;
     }
@@ -46,17 +47,17 @@ public class Monster {
      * Parameters: None
      * Return type: int
      */
-    public int getHitPoints(){
+    public int getHitPoints() {
         return this.hitPoints;
     }
 
     /**
      * Method description: Sets the hitPoints attribute for Monster
      * Date: Apr 5, 2020
-     * Parameters: int hitPoints
+     * Parameters: int hitPoint
      * Return type: void
      */
-    public void setHitPoints(int hitPoints){
+    public void setHitPoints(int hitPoints) {
         this.hitPoints = hitPoints;
     }
 
@@ -66,7 +67,7 @@ public class Monster {
      * Parameters: None
      * Return type: int
      */
-    public String getName(){
+    public String getName() {
         return this.name;
     }
 
@@ -76,7 +77,7 @@ public class Monster {
      * Parameters: String name
      * Return type: void
      */
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -87,7 +88,7 @@ public class Monster {
      * Return type: String
      */
     @Override
-    public String toString(){
+    public String toString() {
         return "Monster [name=" +
                 this.name +
                 ", hitPoints=" +

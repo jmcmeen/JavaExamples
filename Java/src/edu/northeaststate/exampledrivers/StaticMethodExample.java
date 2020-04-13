@@ -18,7 +18,7 @@ public class StaticMethodExample {
         //You can create an object of that class, but it is not necessary
         SimpleDiceRoller d = new SimpleDiceRoller();
         for (int i = 0; i < 5; i++) {
-            System.out.println("D20 = " + d.roll(20));
+            System.out.println("D20 = " + SimpleDiceRoller.roll(20));
         }
     }
 }

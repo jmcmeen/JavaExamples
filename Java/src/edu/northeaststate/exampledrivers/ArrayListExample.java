@@ -34,12 +34,12 @@ public class ArrayListExample {
         System.out.println("Monster Count: " + monsters.size() + "\n");
 
         //Display all the Monsters using for loop
-        for(int i = 0; i < monsters.size(); i++){
+        for (int i = 0; i < monsters.size(); i++) {
             System.out.println(monsters.get(i).toString());
         }
 
         //Display break in between output
-        System.out.println("");
+        System.out.println();
 
         //Display all the Monsters using for each loop (preferred)
         //Also add up all hit points
@@ -47,7 +47,7 @@ public class ArrayListExample {
 
         //The for each loop let's you construct a for loop  using an alias for each of the Monsters in the ArrayList
         //Here we use "mo" because m is already used above. You can name the alias whatever you would like
-        for(Monster mo: monsters){
+        for (Monster mo : monsters) {
             System.out.println(mo.toString());
             totalHp += mo.getHitPoints();
         }

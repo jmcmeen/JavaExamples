@@ -25,9 +25,10 @@ import java.util.ArrayList;
  * <hr>
  * Date created: Mar 24, 2020
  * <hr>
+ *
  * @author John McMeen
  */
-public class Encounter{
+public class Encounter {
     private ArrayList<Monster> monsters;
     private String encounterName;
 
@@ -38,7 +39,7 @@ public class Encounter{
      * Parameters: String name
      * Return type: NA
      */
-    public Encounter(String name){
+    public Encounter(String name) {
         this.encounterName = name;
         this.monsters = new ArrayList<>();
     }
@@ -51,8 +52,8 @@ public class Encounter{
      * Parameters: String monsterName, int hitPoints
      * Return type: void
      */
-    public void addMonster(String monsterName, int hitPoints){
+    public void addMonster(String monsterName, int hitPoints) {
         Monster m = new Monster(monsterName, hitPoints);
-        this.monsters.add( m  );
+        this.monsters.add(m);
     }
 }

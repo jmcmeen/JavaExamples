@@ -1,7 +1,8 @@
 package edu.northeaststate.exampledrivers;
 
-import java.util.Scanner;
 import edu.northeaststate.dnd.util.Helper;
+
+import java.util.Scanner;
 
 public class StaticMethodExample02 {
     public static void main(String[] args) {
@@ -17,7 +18,7 @@ public class StaticMethodExample02 {
         tempInput = keyboard.nextLine();
 
         //while the parsed integer is not positive, keep getting input
-        while( (parsedInteger = Helper.isPositiveInteger(tempInput)) == -1 ){
+        while ((parsedInteger = Helper.isPositiveInteger(tempInput)) == -1) {
             System.out.println(tempInput + " is not a positive integer.");
             System.out.print("Enter a positive integer: ");
             tempInput = keyboard.nextLine();
@@ -30,7 +31,7 @@ public class StaticMethodExample02 {
         tempInput = keyboard.nextLine();
 
         //while the parsed double is not positive, keep getting input
-        while( (parsedDouble = Helper.isPositiveDouble(tempInput)) == -1 ){
+        while ((parsedDouble = Helper.isPositiveDouble(tempInput)) == -1) {
             System.out.println(tempInput + " is not a positive double.");
             System.out.print("Enter a positive double: ");
             tempInput = keyboard.nextLine();

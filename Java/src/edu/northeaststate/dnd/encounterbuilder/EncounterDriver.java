@@ -20,6 +20,7 @@ import java.util.ArrayList;
  * <hr>
  * Date created: Mar 24, 2020
  * <hr>
+ *
  * @author John McMeen
  */
 public class EncounterDriver {
@@ -48,7 +49,7 @@ public class EncounterDriver {
 
         encounters.add(e);
 
-        for(Encounter encounter: encounters){
+        for (Encounter encounter : encounters) {
             System.out.println(encounter.toString());
         }
     }

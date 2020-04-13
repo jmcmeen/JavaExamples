@@ -3,7 +3,7 @@ package edu.northeaststate.exampledrivers;
 import edu.northeaststate.dnd.encounterbuilder.Monster;
 
 public class ReferenceExample02 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //Create a monster using overload constructor (see ConstructorExample)
         Monster FrostGiant = new Monster("Frost Giant", 100);
 

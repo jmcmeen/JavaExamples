@@ -14,6 +14,7 @@ package edu.northeaststate.dnd.randomencounters.boilerplate;
 import edu.northeaststate.dnd.randomencounters.boilerplate.monsters.Monster;
 import edu.northeaststate.dnd.randomencounters.boilerplate.monsters.Orc;
 import edu.northeaststate.dnd.randomencounters.boilerplate.monsters.Troll;
+
 import java.util.Random;
 
 /**
@@ -24,18 +25,19 @@ import java.util.Random;
  * <hr>
  * Date created: Apr 5, 2020
  * <hr>
+ *
  * @author John McMeen
  */
 public class MonsterGenerator {
     /**
      * Method description: Returns a random extended Monster object.
-     *                     Extended Monsters currently supported:
-     *                       -Orc
-     *                       -Troll
+     * Extended Monsters currently supported:
+     * -Orc
+     * -Troll
      * Parameters: None
      * Return type: Monster
      */
-    public static Monster getRandomMonster(){
+    public static Monster getRandomMonster() {
         //total type of extended Monsters supported by getRandomMonster
         final int NUM_MONSTER_TYPES = 2;
 
@@ -49,7 +51,7 @@ public class MonsterGenerator {
         int monster_pick = r.nextInt(NUM_MONSTER_TYPES);
 
         //Switch on monster_pick and return a newly created reference to an extended Monster type
-        switch (monster_pick){
+        switch (monster_pick) {
             //monster_pick = 0, then construct an Orc
             case 0:
                 m = new Orc();

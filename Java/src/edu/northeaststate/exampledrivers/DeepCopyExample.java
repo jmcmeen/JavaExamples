@@ -1,6 +1,7 @@
 package edu.northeaststate.exampledrivers;
 
-import edu.northeaststate.alexandria.*;
+import edu.northeaststate.alexandria.logic.Book;
+import edu.northeaststate.alexandria.logic.Library;
 
 import java.util.ArrayList;
 

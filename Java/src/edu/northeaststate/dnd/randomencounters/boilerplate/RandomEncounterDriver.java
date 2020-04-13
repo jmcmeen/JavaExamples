@@ -12,6 +12,7 @@
 package edu.northeaststate.dnd.randomencounters.boilerplate;
 
 import edu.northeaststate.dnd.util.ConsoleHelper;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -23,21 +24,22 @@ import java.util.Random;
  * <hr>
  * Date created: Apr 05, 2016
  * <hr>
+ *
  * @author John McMeen
  */
 public class RandomEncounterDriver {
     /**
      * Method description: Uses MonsterGenerator.getRandomMonster to build a specified number of Encounter objects
-     *                     and fill them with random monsters of various extended types. Orc and Troll are provided.
+     * and fill them with random monsters of various extended types. Orc and Troll are provided.
      * Date: Apr 05, 2016
      * Parameters: String[] args (unused)
      * Return type: void
      */
     public static void main(String[] args) {
         //some constant variables to drive the random monster simulation
-        final int NUM_ENCOUNTERS = 3;  //number of encounters to generate
-        final int MIN_MONSTERS = 1;   //minimum number of monsters to generator per encounter
-        final int MAX_MONSTERS = 10;  //maximum number of monsters to generator per encounter
+        final short NUM_ENCOUNTERS = 3;  //number of encounters to generate
+        final short MIN_MONSTERS = 2;   //minimum number of monsters to generator per encounter
+        final short MAX_MONSTERS = 10;  //maximum number of monsters to generator per encounter
 
         //Ask for some memory for an ArrayList to hold Encounters
         ArrayList<Encounter> encounters = new ArrayList<>();
@@ -54,7 +56,7 @@ public class RandomEncounterDriver {
             int num_monsters = r.nextInt(MAX_MONSTERS - MIN_MONSTERS + 1) + MIN_MONSTERS;
 
             //Loop for the number of monsters decided to generate
-            for(int j = 0; j < num_monsters; j++){
+            for (int j = 0; j < num_monsters; j++) {
                 //ask MonsterGenerator for a Monster in memory, add the Monster reference to encounter
                 encounter.addMonster(MonsterGenerator.getRandomMonster());
             }
@@ -64,7 +66,8 @@ public class RandomEncounterDriver {
         }
 
         //Loop through each encounter created
-        for (Encounter e:encounters) {
+        for (Encounter e : encounters) {
+            e.sortMonstersByName();
             //Print the Encounter object
             System.out.println(e);
             ConsoleHelper.pressEnterToContinue();

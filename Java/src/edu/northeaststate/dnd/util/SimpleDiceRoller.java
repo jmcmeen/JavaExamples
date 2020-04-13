@@ -11,6 +11,7 @@
 package edu.northeaststate.dnd.util;
 
 /* Imports */
+
 import java.util.Random;
 
 /**
@@ -21,17 +22,18 @@ import java.util.Random;
  * <hr>
  * Date created: Apr 5, 2020
  * <hr>
+ *
  * @author John McMeen
  */
 public class SimpleDiceRoller {
     /**
      * Method description: Takes an integer for number of side of "dice." Uses
-     *                     Random class to generate a number between 1 and numSides.
+     * Random class to generate a number between 1 and numSides.
      * Date: Apr 5, 2020
      * Parameters: int numSides
      * Return type: int
      */
-    public static int roll(int numSides){
+    public static int roll(int numSides) {
         Random r = new Random();
 
         return r.nextInt(numSides) + 1;

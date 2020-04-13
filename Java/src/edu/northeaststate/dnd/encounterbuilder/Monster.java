@@ -23,6 +23,7 @@ package edu.northeaststate.dnd.encounterbuilder;
  * <hr>
  * Date created: Mar 24, 2020
  * <hr>
+ *
  * @author John McMeen
  */
 public class Monster {
@@ -35,7 +36,7 @@ public class Monster {
      * Parameters: NA
      * Return type: NA
      */
-    public Monster(){
+    public Monster() {
     }
 
     /**
@@ -44,7 +45,7 @@ public class Monster {
      * Parameters: String name, int hitPoints
      * Return type: NA
      */
-    public Monster(String name, int hitPoints){
+    public Monster(String name, int hitPoints) {
         this.name = name;
         this.hitPoints = hitPoints;
     }
@@ -55,7 +56,7 @@ public class Monster {
      * Parameters: NA
      * Return type: int
      */
-    public int getHitPoints(){
+    public int getHitPoints() {
         return this.hitPoints;
     }
 
@@ -65,7 +66,7 @@ public class Monster {
      * Parameters: int hitPoints
      * Return type: void
      */
-    public void setHitPoints(int hitPoints){
+    public void setHitPoints(int hitPoints) {
         this.hitPoints = hitPoints;
     }
 
@@ -75,7 +76,7 @@ public class Monster {
      * Parameters: NA
      * Return type: int
      */
-    public String getName(){
+    public String getName() {
         return this.name;
     }
 
@@ -85,7 +86,7 @@ public class Monster {
      * Parameters: String name
      * Return type: void
      */
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -95,11 +96,11 @@ public class Monster {
      * Parameters: String name
      * Return type: void
      */
-    public void takeDamage(int damage){
+    public void takeDamage(int damage) {
         this.hitPoints -= damage;
     }
 
-    public String toString(){
+    public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Monster [name=");
         sb.append(this.name);

@@ -12,6 +12,7 @@
 package edu.northeaststate.dnd.randomencounters.boilerplate;
 
 import edu.northeaststate.dnd.randomencounters.boilerplate.monsters.Monster;
+
 import java.util.ArrayList;
 
 /**
@@ -23,6 +24,7 @@ import java.util.ArrayList;
  * <hr>n
  * Date created: Apr 5, 2020
  * <hr>
+ *
  * @author John McMeen
  */
 public class Encounter {
@@ -36,7 +38,7 @@ public class Encounter {
      * Parameters: String name
      * Return type: NA
      */
-    public Encounter(String name){
+    public Encounter(String name) {
         this.name = name;
         this.monsters = new ArrayList<>();
     }
@@ -47,8 +49,8 @@ public class Encounter {
      * Parameters: Monster monster
      * Return type: void
      */
-    public void addMonster(Monster monster){
-        this.monsters.add( monster );
+    public void addMonster(Monster monster) {
+        this.monsters.add(monster);
     }
 
     /**
@@ -60,9 +62,9 @@ public class Encounter {
     @Override
     public String toString() {
         String s = "Encounter[name= " +
-                    this.name +
-                   "]\n" +
-                   "monsters= \n";
+                this.name +
+                "]\n" +
+                "monsters= \n";
 
         for (int i = 0; i < monsters.size(); i++) {
 
@@ -72,5 +74,13 @@ public class Encounter {
         s += "]";
 
         return s;
+    }
+
+    public void sortMonstersByHitPoints() {
+        this.monsters.sort(new CompareByHitPoints());
+    }
+
+    public void sortMonstersByName() {
+        this.monsters.sort(new CompareByName());
     }
 }

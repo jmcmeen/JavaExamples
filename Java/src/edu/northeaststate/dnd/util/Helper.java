@@ -21,6 +21,7 @@ package edu.northeaststate.dnd.util;
  * <hr>
  * Date created: Mar 24, 2020
  * <hr>
+ *
  * @author John McMeen
  */
 public class Helper {
@@ -31,17 +32,16 @@ public class Helper {
      * Parameters: String testString
      * Return type: int
      */
-    public static int isPositiveInteger(String testString){
+    public static int isPositiveInteger(String testString) {
         int x;
 
         try {
             x = Integer.parseInt(testString);
 
-            if(x < 1){
+            if (x < 1) {
                 x = -1;
             }
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             x = -1;
         }
 
@@ -55,16 +55,15 @@ public class Helper {
      * Parameters: String testString
      * Return type: double
      */
-    public static double isPositiveDouble(String testString){
+    public static double isPositiveDouble(String testString) {
         double x;
         try {
             x = Double.parseDouble(testString);
 
-            if( !(x > 0.0) ){
+            if (!(x > 0.0)) {
                 x = -1.0;
             }
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             x = -1.0;
         }
 
