@@ -17,7 +17,7 @@ public class LibraryFileAccess {
         Library temp = (Library) input.readObject();
 
         library.setName(temp.getName());
-        library.setBooks(temp.getBooks());
+        library.setItems(temp.getItems());
 
         input.close();
     }

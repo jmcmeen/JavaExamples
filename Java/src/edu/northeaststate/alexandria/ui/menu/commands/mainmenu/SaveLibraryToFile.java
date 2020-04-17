@@ -1,12 +1,13 @@
-package edu.northeaststate.alexandria.ui.menu.commands;
+package edu.northeaststate.alexandria.ui.menu.commands.mainmenu;
 
 import edu.northeaststate.alexandria.data.LibraryFileAccess;
 import edu.northeaststate.alexandria.models.Library;
+import edu.northeaststate.alexandria.ui.menu.commands.MenuCommand;
 
 import java.io.IOException;
 import java.util.Scanner;
 
-public class SaveLibraryToFile implements MenuCommand{
+public class SaveLibraryToFile implements MenuCommand {
     private Library library;
 
     public SaveLibraryToFile(Library library) {

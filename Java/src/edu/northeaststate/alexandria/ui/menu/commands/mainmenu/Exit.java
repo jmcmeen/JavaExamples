@@ -1,14 +1,9 @@
-package edu.northeaststate.alexandria.ui.menu.commands;
+package edu.northeaststate.alexandria.ui.menu.commands.mainmenu;
 
 import edu.northeaststate.alexandria.models.Library;
+import edu.northeaststate.alexandria.ui.menu.commands.MenuCommand;
 
 public class Exit implements MenuCommand {
-    private Library library;
-
-    public Exit(Library library) {
-        this.library = library;
-    }
-
     @Override
     public void execute() {
         System.out.println("Exiting");
@@ -21,6 +16,6 @@ public class Exit implements MenuCommand {
 
     @Override
     public String getCommandName() {
-        return "Exit - No Save";
+        return "Exit";
     }
 }

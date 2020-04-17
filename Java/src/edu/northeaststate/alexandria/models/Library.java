@@ -1,15 +1,22 @@
 package edu.northeaststate.alexandria.models;
 
+import edu.northeaststate.alexandria.models.book.Book;
+import edu.northeaststate.alexandria.models.film.DVD;
+import edu.northeaststate.alexandria.models.film.VHS;
+import edu.northeaststate.alexandria.models.periodical.Journal;
+import edu.northeaststate.alexandria.models.periodical.Magazine;
+import edu.northeaststate.alexandria.models.periodical.Newspaper;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Library implements Serializable {
     private String name;
-    private ArrayList<Book> books;
+    private ArrayList<Item> items;
 
     public Library(String name) {
         this.name = name;
-        books = new ArrayList<>();
+        items = new ArrayList<>();
     }
 
     public String getName() {
@@ -20,31 +27,67 @@ public class Library implements Serializable {
         this.name = name;
     }
 
-    public ArrayList<Book> getBooks() {
-        return books;
+    public ArrayList<Item> getItems() {
+        return items;
     }
 
     //deep copy
-    public void setBooks(ArrayList<Book> books) {
-        this.books = new ArrayList<>();
+    public void setItems(ArrayList<Item> newItems) {
+        this.items = new ArrayList<>();
 
-        for (Book b : books) {
-            this.books.add(new Book(b));
+        for (Item item : newItems) {
+            if(item instanceof Book){
+                this.items.add(new Book( (Book) item) );
+            }else if (item instanceof DVD){
+                this.items.add(new DVD( (DVD) item));
+            }else if (item instanceof VHS){
+                this.items.add(new VHS( (VHS) item));
+            }else if (item instanceof Journal){
+                this.items.add(new Journal( (Journal) item));
+            }else if (item instanceof Magazine){
+                this.items.add(new Magazine( (Magazine) item));
+            }else if (item instanceof Newspaper){
+                this.items.add(new Newspaper( (Newspaper) item));
+            }
         }
     }
 
-    public int calculateTotalBooks() {
-        return this.books.size();
+    public int calculateTotalItems() {
+        return this.items.size();
     }
 
-    public void addBook(String name, String ISBN, String author) {
-        this.books.add(new Book(name, ISBN, author));
+    public void addItem(Item item) {
+        if(item instanceof Book){
+            this.items.add(new Book( (Book) item) );
+        }else if (item instanceof DVD){
+            this.items.add(new DVD( (DVD) item));
+        }else if (item instanceof VHS){
+            this.items.add(new VHS( (VHS) item));
+        }else if (item instanceof Journal){
+            this.items.add(new Journal( (Journal) item));
+        }else if (item instanceof Magazine){
+            this.items.add(new Magazine( (Magazine) item));
+        }else if (item instanceof Newspaper){
+            this.items.add(new Newspaper( (Newspaper) item));
+        }
     }
 
     //deep copy
-    public void addBooks(ArrayList<Book> books) {
-        for (Book b : books) {
-            this.books.add(new Book(b));
+    public void addItems(ArrayList<Item> newItems) {
+        for (Item item : newItems) {
+            if(item instanceof Book){
+                this.items.add(new Book( (Book) item) );
+            }else if (item instanceof DVD){
+                this.items.add(new DVD( (DVD) item));
+            }else if (item instanceof VHS){
+                this.items.add(new VHS( (VHS) item));
+            }else if (item instanceof Journal){
+                this.items.add(new Journal( (Journal) item));
+            }else if (item instanceof Magazine){
+                this.items.add(new Magazine( (Magazine) item));
+            }else if (item instanceof Newspaper){
+                this.items.add(new Newspaper( (Newspaper) item));
+            }
         }
     }
 
@@ -55,15 +98,17 @@ public class Library implements Serializable {
         sb.append("Library name: ");
         sb.append(this.name);
         sb.append("\n");
-        sb.append("Total books: ");
-        sb.append(this.calculateTotalBooks());
+        sb.append("Total items: ");
+        sb.append(this.calculateTotalItems());
         sb.append("\n");
 
-        for (Book b : this.books) {
-            sb.append(b.toString());
+        for (Item i : this.items) {
+            sb.append(i.toString());
             sb.append("\n");
         }
 
         return sb.toString();
     }
+
+
 }

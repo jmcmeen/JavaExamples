@@ -1,34 +1,38 @@
-package edu.northeaststate.alexandria.ui.menu.commands;
+package edu.northeaststate.alexandria.ui.menu.commands.additems;
 
 import edu.northeaststate.alexandria.models.Library;
+import edu.northeaststate.alexandria.ui.menu.commands.MenuCommand;
 
-import java.util.Scanner;
-
-public class AddBookToLibrary implements MenuCommand {
+public class AddBook implements MenuCommand {
+    private final String COMMAND_NAME = "Add Book";
     private Library library;
 
-    public AddBookToLibrary(Library library) {
+    public AddBook(Library library) {
         this.library = library;
     }
 
     @Override
     public void execute() {
-        Scanner keyboard = new Scanner(System.in);
+        System.out.println(COMMAND_NAME);
 
-        String name;
+        /*
+             Scanner keyboard = new Scanner(System.in);
+
+        String title;
         String author;
         String ISBN;
 
         System.out.print("Enter book name: ");
-        name = keyboard.nextLine();
+        title = keyboard.nextLine();
         System.out.print("Enter book author: ");
         author = keyboard.nextLine();
         System.out.print("Enter book ISBN: ");
         ISBN = keyboard.nextLine();
 
-        this.library.addBook(name, ISBN, author);
+        this.library.addBook( new Book() );
 
         System.out.println("Book added to library.");
+         */
     }
 
     @Override
@@ -38,6 +42,6 @@ public class AddBookToLibrary implements MenuCommand {
 
     @Override
     public String getCommandName() {
-        return "Add Book To Library";
+        return COMMAND_NAME;
     }
 }

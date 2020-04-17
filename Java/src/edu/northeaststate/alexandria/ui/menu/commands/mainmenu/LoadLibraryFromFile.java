@@ -1,11 +1,12 @@
-package edu.northeaststate.alexandria.ui.menu.commands;
+package edu.northeaststate.alexandria.ui.menu.commands.mainmenu;
 
 import edu.northeaststate.alexandria.data.LibraryFileAccess;
 import edu.northeaststate.alexandria.models.Library;
+import edu.northeaststate.alexandria.ui.menu.commands.MenuCommand;
 
 import java.util.Scanner;
 
-public class LoadLibraryFromFile implements MenuCommand{
+public class LoadLibraryFromFile implements MenuCommand {
     private Library library;
 
     public LoadLibraryFromFile(Library library) {

@@ -1,34 +1,31 @@
-package edu.northeaststate.alexandria.ui.menu.commands;
+package edu.northeaststate.alexandria.ui.menu.commands.mainmenu;
 
-import edu.northeaststate.alexandria.models.Book;
 import edu.northeaststate.alexandria.models.Library;
+import edu.northeaststate.alexandria.ui.menu.commands.MenuCommand;
 
-import java.util.Scanner;
-
-public class SearchForBookByName implements MenuCommand{
+public class SearchLibrary implements MenuCommand {
     private Library library;
 
-    public SearchForBookByName(Library library) {
+    public SearchLibrary(Library library) {
         this.library = library;
     }
 
     @Override
     public void execute() {
-        Scanner keyboard = new Scanner(System.in);
+        /*Scanner keyboard = new Scanner(System.in);
 
         String nameInput;
 
         System.out.print("Enter book name:");
         nameInput = keyboard.nextLine();
 
-        //search for book
         for(Book b: library.getBooks()){
-            if(b.getName().equalsIgnoreCase(nameInput)){
+            if(b.getTitle().equalsIgnoreCase(nameInput)){
                 System.out.println("Found book!");
                 System.out.println(b);
                 break;
             }
-        }
+        }*/
     }
 
     @Override
