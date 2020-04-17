@@ -1,6 +1,6 @@
 package edu.northeaststate.alexandria.ui.menu.commands;
 
-import edu.northeaststate.alexandria.logic.Library;
+import edu.northeaststate.alexandria.models.Library;
 
 public class ExitWithoutSave implements MenuCommand {
     private Library library;

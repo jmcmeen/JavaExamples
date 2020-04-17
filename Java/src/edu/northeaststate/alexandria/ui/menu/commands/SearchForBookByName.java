@@ -1,7 +1,7 @@
 package edu.northeaststate.alexandria.ui.menu.commands;
 
-import edu.northeaststate.alexandria.logic.Book;
-import edu.northeaststate.alexandria.logic.Library;
+import edu.northeaststate.alexandria.models.Book;
+import edu.northeaststate.alexandria.models.Library;
 
 import java.util.Scanner;
 

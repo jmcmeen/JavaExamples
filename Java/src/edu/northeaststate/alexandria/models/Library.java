@@ -1,8 +1,9 @@
-package edu.northeaststate.alexandria.logic;
+package edu.northeaststate.alexandria.models;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Library {
+public class Library implements Serializable {
     private String name;
     private ArrayList<Book> books;
 
@@ -23,9 +24,13 @@ public class Library {
         return books;
     }
 
-    //shallow copy
+    //deep copy
     public void setBooks(ArrayList<Book> books) {
-        this.books = books;
+        this.books = new ArrayList<>();
+
+        for (Book b : books) {
+            this.books.add(new Book(b));
+        }
     }
 
     public int calculateTotalBooks() {
@@ -37,12 +42,7 @@ public class Library {
         this.books.add(new Book(name, ISBN, author));
     }
 
-    //deep copy and copy constructor
-    public void addBook(Book b) {
-        this.books.add(new Book(b));
-    }
-
-    //deep copy and copy constructor
+    //deep copy
     public void addBooks(ArrayList<Book> books) {
         for (Book b : books) {
             this.books.add(new Book(b));

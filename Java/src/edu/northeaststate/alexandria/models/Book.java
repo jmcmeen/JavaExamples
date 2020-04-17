@@ -1,11 +1,13 @@
-package edu.northeaststate.alexandria.logic;
+package edu.northeaststate.alexandria.models;
 
-public class Book {
+import java.io.Serializable;
+
+public class Book implements Serializable {
     private String name;
     private String ISBN;
     private String author;
 
-    //overloaded constructor
+    //overloaded constructor3
     public Book(String name, String ISBN, String author) {
         this.name = name;
         this.ISBN = ISBN;
