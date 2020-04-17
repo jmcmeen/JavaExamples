@@ -1,6 +1,6 @@
 package edu.northeaststate.alexandria.ui.menu.commands;
 
-import edu.northeaststate.alexandria.data.FileAccess;
+import edu.northeaststate.alexandria.data.LibraryFileAccess;
 import edu.northeaststate.alexandria.models.Library;
 
 import java.util.Scanner;
@@ -18,9 +18,11 @@ public class LoadLibraryFromFile implements MenuCommand{
 
         System.out.print("Enter the file name to load: ");
 
-        String ans = keyboard.nextLine().trim();
+        String filename = keyboard.nextLine().trim();
         try {
-            FileAccess.openLibraryFile(ans, this.library);
+            LibraryFileAccess file = new LibraryFileAccess(filename);
+            file.openLibraryFile(this.library);
+
         } catch (Exception e) {
             //System.out.println("\n======================= ERROR ========================");
             System.out.println("\n" + e.getMessage() + "\n");
@@ -35,6 +37,6 @@ public class LoadLibraryFromFile implements MenuCommand{
 
     @Override
     public String getCommandName() {
-        return "Load Library Data From File";
+        return "Load Library from File";
     }
 }

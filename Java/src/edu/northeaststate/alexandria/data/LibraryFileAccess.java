@@ -4,10 +4,16 @@ import edu.northeaststate.alexandria.models.Library;
 
 import java.io.*;
 
-public class FileAccess {
-    public static void openLibraryFile(String fileName, Library library) throws IOException, ClassNotFoundException {
+public class LibraryFileAccess {
+    private String filename;
+
+    public LibraryFileAccess(String filename) {
+        this.filename = filename;
+    }
+
+    public void openLibraryFile(Library library) throws IOException, ClassNotFoundException {
         ObjectInputStream input = null;
-        input = new ObjectInputStream(new FileInputStream(fileName));
+        input = new ObjectInputStream(new FileInputStream(this.filename));
         Library temp = (Library) input.readObject();
 
         library.setName(temp.getName());
@@ -16,8 +22,8 @@ public class FileAccess {
         input.close();
     }
 
-    public static void saveLibraryFile(String fileName, Library library) throws IOException {
-        File file = new File(fileName);
+    public void saveLibraryFile(Library library) throws IOException {
+        File file = new File(this.filename);
         //System.out.println(file.getAbsolutePath());
         ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream(file.getAbsolutePath()));
         output.writeObject(library);

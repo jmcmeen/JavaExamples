@@ -19,16 +19,16 @@ public class AddBookToLibrary implements MenuCommand {
         String author;
         String ISBN;
 
-        System.out.print("Enter book name:");
+        System.out.print("Enter book name: ");
         name = keyboard.nextLine();
-        System.out.print("Enter book author:");
+        System.out.print("Enter book author: ");
         author = keyboard.nextLine();
-        System.out.print("Enter book ISBN:");
+        System.out.print("Enter book ISBN: ");
         ISBN = keyboard.nextLine();
 
         this.library.addBook(name, ISBN, author);
 
-        System.out.println("Book added!");
+        System.out.println("Book added to library.");
     }
 
     @Override

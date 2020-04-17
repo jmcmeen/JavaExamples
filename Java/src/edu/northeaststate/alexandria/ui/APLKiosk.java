@@ -15,9 +15,7 @@ public class APLKiosk {
         menu.addCommand(new AddBookToLibrary(alexandria));
         menu.addCommand(new SearchForBookByName(alexandria));
         menu.addCommand(new ShowAllBooks(alexandria));
-        menu.addCommand(new ExitWithSave(alexandria));
-        menu.addCommand(new ExitWithoutSave(alexandria));
-
+        menu.addCommand(new Exit(alexandria));
 
         menu.show();
     }

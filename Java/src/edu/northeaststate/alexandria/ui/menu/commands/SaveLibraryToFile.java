@@ -1,6 +1,6 @@
 package edu.northeaststate.alexandria.ui.menu.commands;
 
-import edu.northeaststate.alexandria.data.FileAccess;
+import edu.northeaststate.alexandria.data.LibraryFileAccess;
 import edu.northeaststate.alexandria.models.Library;
 
 import java.io.IOException;
@@ -18,9 +18,10 @@ public class SaveLibraryToFile implements MenuCommand{
         Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Enter file name to save: ");
-        String fileName = keyboard.nextLine().trim();
+        String filename = keyboard.nextLine().trim();
         try {
-            FileAccess.saveLibraryFile(fileName, this.library);
+            LibraryFileAccess file = new LibraryFileAccess(filename);
+            file.saveLibraryFile(this.library);
             System.out.println("\n\nFile saved.");
         } catch (IOException e) {
             System.out.println("File save error.");
