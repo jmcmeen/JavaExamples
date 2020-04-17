@@ -57,6 +57,11 @@ public class Orc extends Monster {
         numOrcs += 1;
     }
 
+    public Orc(String name, int hitPoints){
+        super(name, hitPoints);
+        numOrcs++;
+    }
+
     /**
      * Method description: Build a string that represents an Orc
      * Date: Apr 5, 2020

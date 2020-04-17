@@ -11,7 +11,7 @@ public class Cells {
         for (int row = 0; row < cells.length; row++) {
             for (int col = 0; col < cells[row].length; col++) {
                 cells[row][col] = new Cell();
-                if (generator.nextInt(5) == 0) {
+                if (generator.nextInt(3) == 0) {
                     cells[row][col].makeAlive();
                 }
             }

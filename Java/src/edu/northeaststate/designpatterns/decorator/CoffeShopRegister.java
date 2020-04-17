@@ -10,7 +10,5 @@ public class CoffeShopRegister {
 
         Sugar sugarAddOn = new Sugar(milkAddOn);
         System.out.println(sugarAddOn.getDescription() + ": Cost $" + sugarAddOn.cost());
-
-
     }
 }

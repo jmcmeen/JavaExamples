@@ -4,7 +4,7 @@ import edu.northeaststate.alexandria.logic.Library;
 
 import java.util.Scanner;
 
-public class AddBookToLibrary implements Command {
+public class AddBookToLibrary implements MenuCommand {
     private Library library;
 
     public AddBookToLibrary(Library library) {

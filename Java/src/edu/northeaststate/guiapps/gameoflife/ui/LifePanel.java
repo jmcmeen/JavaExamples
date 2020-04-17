@@ -12,7 +12,7 @@ public class LifePanel extends JPanel {
 
     private static final long serialVersionUID = 1L;
     Cells peatry = new Cells();
-    Timer timer = new Timer(500, new TickHandler());
+    Timer timer = new Timer(50, new TickHandler());
 
     public LifePanel() {
         timer.start();

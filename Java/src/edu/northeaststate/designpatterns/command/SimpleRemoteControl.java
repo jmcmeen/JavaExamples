@@ -1,16 +1,16 @@
 package edu.northeaststate.designpatterns.command;
 
 class SimpleRemoteControl {
-    Command button;
+    private Command command;
 
     public SimpleRemoteControl() {
     }
 
     public void setButtonCommand(Command command) {
-        button = command;
+        this.command = command;
     }
 
     public void pressButton() {
-        button.execute();
+        command.execute();
     }
 }

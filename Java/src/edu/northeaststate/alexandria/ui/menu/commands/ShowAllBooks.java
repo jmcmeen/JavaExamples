@@ -3,7 +3,7 @@ package edu.northeaststate.alexandria.ui.menu.commands;
 import edu.northeaststate.alexandria.logic.Book;
 import edu.northeaststate.alexandria.logic.Library;
 
-public class ShowAllBooks implements Command {
+public class ShowAllBooks implements MenuCommand {
     private Library library;
 
     public ShowAllBooks(Library library) {

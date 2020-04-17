@@ -1,7 +1,7 @@
 package edu.northeaststate.designpatterns.command;
 
 class LightOnCommand implements Command {
-    Light light;
+    private Light light;
 
     // The constructor is passed the light it
     // is going to control.

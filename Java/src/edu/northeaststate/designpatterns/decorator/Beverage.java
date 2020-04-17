@@ -4,7 +4,6 @@ public abstract class Beverage {
     private String description;
 
     public Beverage(String description) {
-        super();
         this.description = description;
     }
 
