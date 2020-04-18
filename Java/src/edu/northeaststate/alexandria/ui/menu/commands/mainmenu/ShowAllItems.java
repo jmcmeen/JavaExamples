@@ -25,6 +25,6 @@ public class ShowAllItems implements MenuCommand {
 
     @Override
     public String getCommandName() {
-        return "Show All Books";
+        return "Show All Items";
     }
 }

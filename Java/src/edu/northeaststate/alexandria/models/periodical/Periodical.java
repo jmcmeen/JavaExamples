@@ -14,7 +14,7 @@ public class Periodical extends Item implements Serializable {
 
     public Periodical(Periodical periodical){
         super(periodical);
-        this.volumeNumber =periodical.volumeNumber;
+        this.volumeNumber = periodical.volumeNumber;
     }
 
     @Override
