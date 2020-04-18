@@ -9,7 +9,7 @@
  * Creation date: Apr 5, 2020
  * -------------------------------------------------
  */
-package edu.northeaststate.dnd.randomencounters.boilerplate;
+package edu.northeaststate.dnd.randomencounters;
 
 import edu.northeaststate.dnd.util.ConsoleHelper;
 

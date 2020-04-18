@@ -1,7 +1,6 @@
 package edu.northeaststate.alexandria.ui.menu.commands.additems;
 
 import edu.northeaststate.alexandria.models.Library;
-import edu.northeaststate.alexandria.models.book.Book;
 import edu.northeaststate.alexandria.models.film.DVD;
 import edu.northeaststate.alexandria.ui.menu.commands.MenuCommand;
 
@@ -16,7 +15,7 @@ public class AddDVD implements MenuCommand {
     }
 
     @Override
-    public void execute() {
+    public void execute() throws CloneNotSupportedException {
         System.out.println(COMMAND_NAME);
 
         Scanner keyboard = new Scanner(System.in);
@@ -25,7 +24,6 @@ public class AddDVD implements MenuCommand {
         String year;
         String title;
         String director;
-
 
         System.out.print("Enter DVD ID: ");
         id = keyboard.nextLine();

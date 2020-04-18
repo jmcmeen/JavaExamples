@@ -9,11 +9,11 @@
  * Creation date: Apr 5, 2020
  * -------------------------------------------------
  */
-package edu.northeaststate.dnd.randomencounters.boilerplate;
+package edu.northeaststate.dnd.randomencounters;
 
-import edu.northeaststate.dnd.randomencounters.boilerplate.monsters.Monster;
-import edu.northeaststate.dnd.randomencounters.boilerplate.monsters.Orc;
-import edu.northeaststate.dnd.randomencounters.boilerplate.monsters.Troll;
+import edu.northeaststate.dnd.randomencounters.monsters.Monster;
+import edu.northeaststate.dnd.randomencounters.monsters.Orc;
+import edu.northeaststate.dnd.randomencounters.monsters.Troll;
 
 import java.util.Random;
 

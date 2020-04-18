@@ -1,7 +1,7 @@
 package edu.northeaststate.alexandria.ui.menu.commands.additems;
 
 import edu.northeaststate.alexandria.models.Library;
-import edu.northeaststate.alexandria.models.film.DVD;
+import edu.northeaststate.alexandria.models.film.VHS;
 import edu.northeaststate.alexandria.ui.menu.commands.MenuCommand;
 
 import java.util.Scanner;
@@ -15,7 +15,7 @@ public class AddVHS implements MenuCommand {
     }
 
     @Override
-    public void execute() {
+    public void execute() throws CloneNotSupportedException {
         System.out.println(COMMAND_NAME);
 
         Scanner keyboard = new Scanner(System.in);
@@ -25,18 +25,18 @@ public class AddVHS implements MenuCommand {
         String title;
         String director;
 
-        System.out.print("Enter DVD ID: ");
+        System.out.print("Enter VHS ID: ");
         id = keyboard.nextLine();
-        System.out.print("Enter DVD name: ");
+        System.out.print("Enter VHS name: ");
         title = keyboard.nextLine();
-        System.out.print("Enter DVD year: ");
+        System.out.print("Enter VHS year: ");
         year = keyboard.nextLine();
-        System.out.print("Enter DVD director: ");
+        System.out.print("Enter VHS director: ");
         director = keyboard.nextLine();
 
-        this.library.addItem( new DVD(id, title, year, director) );
+        this.library.addItem( new VHS(id, title, year, director) );
 
-        System.out.println("DVD added to library.");
+        System.out.println("VHS added to library.");
     }
 
     @Override

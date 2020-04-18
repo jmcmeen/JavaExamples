@@ -9,7 +9,7 @@
  * Creation date: Apr 5, 2020
  * -------------------------------------------------
  */
-package edu.northeaststate.dnd.randomencounters.boilerplate.monsters;
+package edu.northeaststate.dnd.randomencounters.monsters;
 
 /**
  * <b>

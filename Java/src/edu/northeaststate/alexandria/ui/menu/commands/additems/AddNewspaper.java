@@ -15,7 +15,7 @@ public class AddNewspaper implements MenuCommand {
     }
 
     @Override
-    public void execute() {
+    public void execute() throws CloneNotSupportedException {
         System.out.println(COMMAND_NAME);
 
         Scanner keyboard = new Scanner(System.in);

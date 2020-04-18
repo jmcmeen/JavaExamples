@@ -1,7 +1,13 @@
 package edu.northeaststate.designpatterns.command;
 
-// Driver class
-class RemoteControlTest {
+import edu.northeaststate.designpatterns.command.commands.LightOnCommand;
+import edu.northeaststate.designpatterns.command.commands.StereoOffCommand;
+import edu.northeaststate.designpatterns.command.commands.StereoOnWithCDCommand;
+import edu.northeaststate.designpatterns.command.controller.SimpleRemoteControl;
+import edu.northeaststate.designpatterns.command.models.Light;
+import edu.northeaststate.designpatterns.command.models.Stereo;
+
+public class RemoteControlTest {
     public static void main(String[] args) {
         SimpleRemoteControl remote = new SimpleRemoteControl();
 

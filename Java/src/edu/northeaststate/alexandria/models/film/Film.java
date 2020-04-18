@@ -4,17 +4,12 @@ import edu.northeaststate.alexandria.models.Item;
 
 import java.io.Serializable;
 
-public class Film extends Item implements Serializable {
+public class Film extends Item implements Serializable, Cloneable{
     protected String director;
 
     public Film(String ID, String title, String year, String director) {
         super(ID, title, year);
         this.director = director;
-    }
-
-    public Film(Film film){
-        super(film);
-        this.director = film.director;
     }
 
     public String getDirector() {
@@ -26,5 +21,10 @@ public class Film extends Item implements Serializable {
         return "Film{" +
                 "director='" + director + '\'' +
                 "} " + super.toString();
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }

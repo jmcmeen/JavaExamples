@@ -19,11 +19,15 @@ public class ConsoleMenu {
     }
 
     public void show() {
-        Scanner keyboard = new Scanner(System.in);
-
         MenuCommand c;
 
         do {
+            if(mapCommands.isEmpty()){
+                System.out.println("Empty Menu");
+                break;
+            }
+            Scanner keyboard = new Scanner(System.in);
+
             System.out.println(this.menuHeader);
 
             // Using for-each loop
@@ -42,14 +46,16 @@ public class ConsoleMenu {
                 input = keyboard.nextInt();
             }
 
-            //Kludge alert
-            for (int i = 0; i < 50; i++) {
-                System.out.println();
-            }
+            pageFeed();
 
             c = mapCommands.get(input);
 
             c.execute();
         } while (!c.isExit());
+    }
+
+    private void pageFeed(){
+        String n = "\n";
+        System.out.println(n.repeat(30));
     }
 }

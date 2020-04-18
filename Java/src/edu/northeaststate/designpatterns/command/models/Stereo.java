@@ -1,7 +1,7 @@
-package edu.northeaststate.designpatterns.command;
+package edu.northeaststate.designpatterns.command.models;
 
 // Stereo and its command classes
-class Stereo {
+public class Stereo {
     public void on() {
         System.out.println("Stereo is on");
     }

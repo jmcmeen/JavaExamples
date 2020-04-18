@@ -1,6 +1,8 @@
-package edu.northeaststate.designpatterns.command;
+package edu.northeaststate.designpatterns.command.commands;
 
-class LightOnCommand implements Command {
+import edu.northeaststate.designpatterns.command.models.Light;
+
+public class LightOnCommand implements Command {
     private Light light;
 
     // The constructor is passed the light it

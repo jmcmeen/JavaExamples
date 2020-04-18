@@ -1,8 +1,6 @@
-package edu.northeaststate.designpatterns.command;
+package edu.northeaststate.designpatterns.command.models;
 
-// Light class and its corresponding command
-// classes
-class Light {
+public class Light {
     public void on() {
         System.out.println("Light is on");
     }

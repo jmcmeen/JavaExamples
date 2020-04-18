@@ -1,6 +1,8 @@
-package edu.northeaststate.designpatterns.command;
+package edu.northeaststate.designpatterns.command.controller;
 
-class SimpleRemoteControl {
+import edu.northeaststate.designpatterns.command.commands.Command;
+
+public class SimpleRemoteControl {
     private Command command;
 
     public SimpleRemoteControl() {

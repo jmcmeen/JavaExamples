@@ -1,12 +1,5 @@
 package edu.northeaststate.alexandria.models;
 
-import edu.northeaststate.alexandria.models.book.Book;
-import edu.northeaststate.alexandria.models.film.DVD;
-import edu.northeaststate.alexandria.models.film.VHS;
-import edu.northeaststate.alexandria.models.periodical.Journal;
-import edu.northeaststate.alexandria.models.periodical.Magazine;
-import edu.northeaststate.alexandria.models.periodical.Newspaper;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -31,64 +24,18 @@ public class Library implements Serializable {
         return items;
     }
 
-    //deep copy
     public void setItems(ArrayList<Item> newItems) {
-        this.items = new ArrayList<>();
-
-        for (Item item : newItems) {
-            if(item instanceof Book){
-                this.items.add(new Book( (Book) item) );
-            }else if (item instanceof DVD){
-                this.items.add(new DVD( (DVD) item));
-            }else if (item instanceof VHS){
-                this.items.add(new VHS( (VHS) item));
-            }else if (item instanceof Journal){
-                this.items.add(new Journal( (Journal) item));
-            }else if (item instanceof Magazine){
-                this.items.add(new Magazine( (Magazine) item));
-            }else if (item instanceof Newspaper){
-                this.items.add(new Newspaper( (Newspaper) item));
-            }
-        }
+        this.items = (ArrayList<Item>)newItems.clone();
     }
 
     public int calculateTotalItems() {
         return this.items.size();
     }
 
-    public void addItem(Item item) {
-        if(item instanceof Book){
-            this.items.add(new Book( (Book) item) );
-        }else if (item instanceof DVD){
-            this.items.add(new DVD( (DVD) item));
-        }else if (item instanceof VHS){
-            this.items.add(new VHS( (VHS) item));
-        }else if (item instanceof Journal){
-            this.items.add(new Journal( (Journal) item));
-        }else if (item instanceof Magazine){
-            this.items.add(new Magazine( (Magazine) item));
-        }else if (item instanceof Newspaper){
-            this.items.add(new Newspaper( (Newspaper) item));
-        }
-    }
+    public void addItem(Item item) throws CloneNotSupportedException {
 
-    //deep copy
-    public void addItems(ArrayList<Item> newItems) {
-        for (Item item : newItems) {
-            if(item instanceof Book){
-                this.items.add(new Book( (Book) item) );
-            }else if (item instanceof DVD){
-                this.items.add(new DVD( (DVD) item));
-            }else if (item instanceof VHS){
-                this.items.add(new VHS( (VHS) item));
-            }else if (item instanceof Journal){
-                this.items.add(new Journal( (Journal) item));
-            }else if (item instanceof Magazine){
-                this.items.add(new Magazine( (Magazine) item));
-            }else if (item instanceof Newspaper){
-                this.items.add(new Newspaper( (Newspaper) item));
-            }
-        }
+            this.items.add( (Item)item.clone() );
+
     }
 
     @Override

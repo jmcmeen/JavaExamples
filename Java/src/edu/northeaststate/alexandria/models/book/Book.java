@@ -4,7 +4,7 @@ import edu.northeaststate.alexandria.models.Item;
 
 import java.io.Serializable;
 
-public class Book extends Item implements Serializable {
+public class Book extends Item implements Serializable, Cloneable{
     protected String author;
     protected String ISBN;
 
@@ -12,12 +12,6 @@ public class Book extends Item implements Serializable {
         super(ID, title, year);
         this.author = author;
         this.ISBN = ISBN;
-    }
-
-    public Book(Book book) {
-        super(book);
-        this.ISBN = book.ISBN;
-        this.author = book.author;
     }
 
     public String getAuthor() {
@@ -34,5 +28,10 @@ public class Book extends Item implements Serializable {
                 "ISBN='" + ISBN + '\'' +
                 ", author='" + author + '\'' +
                 "} " + super.toString();
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }

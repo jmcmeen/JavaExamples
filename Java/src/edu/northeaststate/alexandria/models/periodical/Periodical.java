@@ -4,7 +4,7 @@ import edu.northeaststate.alexandria.models.Item;
 
 import java.io.Serializable;
 
-public class Periodical extends Item implements Serializable {
+public class Periodical extends Item implements Serializable, Cloneable {
     protected String volumeNumber;
 
     public Periodical(String ID, String title, String year, String volumeNumber) {
@@ -12,9 +12,8 @@ public class Periodical extends Item implements Serializable {
         this.volumeNumber = volumeNumber;
     }
 
-    public Periodical(Periodical periodical){
-        super(periodical);
-        this.volumeNumber = periodical.volumeNumber;
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 
     public String getVolumeNumber() {

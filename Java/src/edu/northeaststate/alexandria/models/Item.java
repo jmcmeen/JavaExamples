@@ -2,7 +2,7 @@ package edu.northeaststate.alexandria.models;
 
 import java.io.Serializable;
 
-public abstract class Item implements Serializable {
+public abstract class Item implements Serializable, Cloneable {
     protected String ID;
     protected String title;
     protected String year;
@@ -11,12 +11,6 @@ public abstract class Item implements Serializable {
         this.ID = ID;
         this.title = title;
         this.year = year;
-    }
-
-    public Item(Item item){
-        this.ID = item.ID;
-        this.title = item.title;
-        this.year = item.year;
     }
 
     public String getID() {
@@ -50,5 +44,10 @@ public abstract class Item implements Serializable {
                 ", title='" + title + '\'' +
                 ", year='" + year + '\'' +
                 '}';
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }
