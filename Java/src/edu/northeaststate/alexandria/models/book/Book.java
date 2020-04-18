@@ -20,6 +20,14 @@ public class Book extends Item implements Serializable {
         this.author = book.author;
     }
 
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getISBN() {
+        return ISBN;
+    }
+
     @Override
     public String toString() {
         return "Book{" +

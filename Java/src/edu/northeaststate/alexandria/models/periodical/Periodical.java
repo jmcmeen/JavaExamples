@@ -17,6 +17,10 @@ public class Periodical extends Item implements Serializable {
         this.volumeNumber = periodical.volumeNumber;
     }
 
+    public String getVolumeNumber() {
+        return volumeNumber;
+    }
+
     @Override
     public String toString() {
         return "Periodical{" +

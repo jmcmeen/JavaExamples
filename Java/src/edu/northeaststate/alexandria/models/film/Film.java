@@ -17,6 +17,10 @@ public class Film extends Item implements Serializable {
         this.director = film.director;
     }
 
+    public String getDirector() {
+        return director;
+    }
+
     @Override
     public String toString() {
         return "Film{" +

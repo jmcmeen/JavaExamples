@@ -31,7 +31,7 @@ public class AddJournal implements MenuCommand {
         title = keyboard.nextLine();
         System.out.print("Enter journal year: ");
         year = keyboard.nextLine();
-        System.out.print("Enter journal director: ");
+        System.out.print("Enter journal volume number: ");
         volumeNumber = keyboard.nextLine();
 
         this.library.addItem( new Journal(id, title, year, volumeNumber) );
