@@ -28,7 +28,7 @@ public class ConsoleMenu {
             }
             Scanner keyboard = new Scanner(System.in);
 
-            System.out.println(this.menuHeader);
+            System.out.println("\n" + this.menuHeader);
 
             // Using for-each loop
             for (Map.Entry mapElement : mapCommands.entrySet()) {
@@ -38,11 +38,11 @@ public class ConsoleMenu {
                 System.out.println(key + ". " + c.getCommandName());
             }
 
-            System.out.print("Chose a number and press enter: ");
+            System.out.print("Choose a number and press enter: ");
             int input = keyboard.nextInt();
 
             while (!mapCommands.containsKey(input)) {
-                System.out.println("Invalid choice. Chose a number and press enter: ");
+                System.out.println("Invalid choice. Choose a number and press enter: ");
                 input = keyboard.nextInt();
             }
 
