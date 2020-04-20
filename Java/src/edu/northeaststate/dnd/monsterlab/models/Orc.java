@@ -18,8 +18,8 @@ import java.io.Serializable;
 public class Orc extends Monster implements Serializable {
     private static int numOrcs = 1;
     private static final int ORC_MAX_HP = 22;
-    private static final int ORC_ATTACK_DAMAGE = 0;
-    private static final int ORC_ARMOR_CLASS = 0;
+    private static final int ORC_ATTACK_DAMAGE = 12;
+    private static final int ORC_ARMOR_CLASS = 14;
 
     public Orc() {
         super("Orc " + numOrcs, SimpleDiceRoller.roll(ORC_MAX_HP), ORC_ATTACK_DAMAGE, ORC_ARMOR_CLASS);
