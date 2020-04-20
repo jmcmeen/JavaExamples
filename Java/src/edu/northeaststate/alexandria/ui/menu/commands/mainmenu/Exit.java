@@ -1,6 +1,5 @@
 package edu.northeaststate.alexandria.ui.menu.commands.mainmenu;
 
-import edu.northeaststate.alexandria.models.Library;
 import edu.northeaststate.alexandria.ui.menu.commands.MenuCommand;
 
 public class Exit implements MenuCommand {
