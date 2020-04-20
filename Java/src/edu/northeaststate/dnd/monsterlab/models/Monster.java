@@ -47,6 +47,8 @@ public abstract class Monster implements Serializable {
         return "Monster{" +
                 "name='" + name + '\'' +
                 ", hitPoints=" + hitPoints +
+                ", attackDamage=" + attackDamage +
+                ", armorClass=" + armorClass +
                 '}';
     }
 }
