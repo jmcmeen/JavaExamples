@@ -15,7 +15,7 @@ public class AddVHS implements MenuCommand {
     }
 
     @Override
-    public void execute() throws CloneNotSupportedException {
+    public void execute() {
         System.out.println(COMMAND_NAME);
 
         Scanner keyboard = new Scanner(System.in);
@@ -34,7 +34,11 @@ public class AddVHS implements MenuCommand {
         System.out.print("Enter VHS director: ");
         director = keyboard.nextLine();
 
-        this.library.addItem( new VHS(id, title, year, director) );
+        try {
+            this.library.addItem( new VHS(id, title, year, director) );
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
 
         System.out.println("VHS added to library.");
     }

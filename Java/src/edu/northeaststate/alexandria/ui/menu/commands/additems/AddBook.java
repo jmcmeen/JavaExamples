@@ -15,7 +15,7 @@ public class AddBook implements MenuCommand {
     }
 
     @Override
-    public void execute() throws CloneNotSupportedException {
+    public void execute(){
         System.out.println(COMMAND_NAME);
 
         Scanner keyboard = new Scanner(System.in);
@@ -37,7 +37,11 @@ public class AddBook implements MenuCommand {
         System.out.print("Enter book ISBN: ");
         ISBN = keyboard.nextLine();
 
-        this.library.addItem( new Book(id, title, year,author, ISBN) );
+        try {
+            this.library.addItem( new Book(id, title, year,author, ISBN) );
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
 
         System.out.println("Book added to library.");
     }

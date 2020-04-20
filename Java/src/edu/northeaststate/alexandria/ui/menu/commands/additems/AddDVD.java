@@ -15,7 +15,7 @@ public class AddDVD implements MenuCommand {
     }
 
     @Override
-    public void execute() throws CloneNotSupportedException {
+    public void execute(){
         System.out.println(COMMAND_NAME);
 
         Scanner keyboard = new Scanner(System.in);
@@ -34,7 +34,11 @@ public class AddDVD implements MenuCommand {
         System.out.print("Enter DVD director: ");
         director = keyboard.nextLine();
 
-        this.library.addItem( new DVD(id, title, year, director) );
+        try {
+            this.library.addItem( new DVD(id, title, year, director) );
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
 
         System.out.println("DVD added to library.");
     }

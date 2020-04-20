@@ -33,9 +33,7 @@ public class Library implements Serializable {
     }
 
     public void addItem(Item item) throws CloneNotSupportedException {
-
-            this.items.add( (Item)item.clone() );
-
+        this.items.add( (Item)item.clone() );
     }
 
     @Override

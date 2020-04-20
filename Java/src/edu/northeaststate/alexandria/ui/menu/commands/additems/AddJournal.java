@@ -15,7 +15,7 @@ public class AddJournal implements MenuCommand {
     }
 
     @Override
-    public void execute() throws CloneNotSupportedException {
+    public void execute() {
         System.out.println(COMMAND_NAME);
 
         Scanner keyboard = new Scanner(System.in);
@@ -34,7 +34,11 @@ public class AddJournal implements MenuCommand {
         System.out.print("Enter journal volume number: ");
         volumeNumber = keyboard.nextLine();
 
-        this.library.addItem( new Journal(id, title, year, volumeNumber) );
+        try {
+            this.library.addItem( new Journal(id, title, year, volumeNumber) );
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
 
         System.out.println("Journal added to library.");
     }
