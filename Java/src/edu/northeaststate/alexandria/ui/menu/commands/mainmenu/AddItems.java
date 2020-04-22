@@ -18,10 +18,13 @@ public class AddItems implements MenuCommand {
         ConsoleMenu menu = new ConsoleMenu(COMMAND_NAME);
 
         menu.addCommand(new AddBook(this.library));
+        menu.addCommand(new AddVHS(this.library));
         menu.addCommand(new AddDVD(this.library));
+        menu.addCommand(new AddBluRay(this.library));
         menu.addCommand(new AddJournal(this.library));
-        menu.addCommand(new AddNewspaper(library));
-        menu.addCommand(new AddVHS(library));
+        menu.addCommand(new AddNewspaper(this.library));
+        menu.addCommand(new AddMagazine(this.library));
+
         menu.addCommand(new Home());
 
         menu.show();
