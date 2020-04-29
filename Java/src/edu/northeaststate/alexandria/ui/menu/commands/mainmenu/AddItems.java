@@ -19,6 +19,7 @@ public class AddItems implements MenuCommand {
 
         menu.addCommand(new AddBook(this.library));
         menu.addCommand(new AddVHS(this.library));
+        menu.addCommand(new AddLaserDisc(this.library));
         menu.addCommand(new AddDVD(this.library));
         menu.addCommand(new AddBluRay(this.library));
         menu.addCommand(new AddJournal(this.library));

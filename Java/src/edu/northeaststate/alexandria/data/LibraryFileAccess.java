@@ -11,8 +11,17 @@ public class LibraryFileAccess {
         this.filename = filename;
     }
 
+    public void saveLibraryFile(Library library) throws IOException {
+        File file = new File(this.filename);
+        String abs = file.getAbsolutePath();
+        ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream(abs));
+        output.writeObject(library);
+        System.out.println("\nFile saved to: " + file.getAbsolutePath());
+        output.close();
+    }
+
     public void openLibraryFile(Library library) throws IOException, ClassNotFoundException {
-        ObjectInputStream input = null;
+        ObjectInputStream input;
         input = new ObjectInputStream(new FileInputStream(this.filename));
         Library temp = (Library) input.readObject();
 
@@ -20,14 +29,7 @@ public class LibraryFileAccess {
         library.setItems(temp.getItems());
 
         input.close();
-    }
 
-    public void saveLibraryFile(Library library) throws IOException {
-        File file = new File(this.filename);
-        //System.out.println(file.getAbsolutePath());
-        ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream(file.getAbsolutePath()));
-        output.writeObject(library);
-        System.out.println("\nFile saved to: " + file.getAbsolutePath());
-        output.close();
+
     }
 }

@@ -3,7 +3,9 @@ package edu.northeaststate.alexandria.ui.menu.commands.mainmenu;
 import edu.northeaststate.alexandria.models.Item;
 import edu.northeaststate.alexandria.models.Library;
 import edu.northeaststate.alexandria.models.book.Book;
+import edu.northeaststate.alexandria.models.film.BluRay;
 import edu.northeaststate.alexandria.models.film.DVD;
+import edu.northeaststate.alexandria.models.film.LaserDisc;
 import edu.northeaststate.alexandria.models.film.VHS;
 import edu.northeaststate.alexandria.models.periodical.Journal;
 import edu.northeaststate.alexandria.models.periodical.Magazine;
@@ -48,11 +50,20 @@ public class SearchLibrary implements MenuCommand {
                 DVD d = (DVD)item;
                 if(d.getDirector().toLowerCase().contains(searchTerm.toLowerCase())){
                     searchResults.add(item);
-
                 }
             }else if (item instanceof VHS){
                 VHS v = (VHS)item;
                 if(v.getDirector().toLowerCase().contains(searchTerm.toLowerCase())){
+                    searchResults.add(item);
+                }
+            }else if (item instanceof BluRay){
+                BluRay b = (BluRay)item;
+                if(b.getDirector().toLowerCase().contains(searchTerm.toLowerCase())){
+                    searchResults.add(item);
+                }
+            }else if (item instanceof LaserDisc){
+                LaserDisc l = (LaserDisc) item;
+                if(l.getDirector().toLowerCase().contains(searchTerm.toLowerCase())){
                     searchResults.add(item);
                 }
             }else if (item instanceof Journal){

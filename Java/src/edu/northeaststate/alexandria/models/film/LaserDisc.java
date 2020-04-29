@@ -2,8 +2,8 @@ package edu.northeaststate.alexandria.models.film;
 
 import java.io.Serializable;
 
-public class BluRay extends Film implements Serializable, Cloneable{
-    public BluRay(String ID, String title, String year, String director) {
+public class LaserDisc extends Film implements Serializable, Cloneable {
+    public LaserDisc(String ID, String title, String year, String director) {
         super(ID, title, year, director);
     }
 
@@ -14,6 +14,6 @@ public class BluRay extends Film implements Serializable, Cloneable{
 
     @Override
     public String toString() {
-        return "BluRay{} " + super.toString();
+        return "LaserDisc{} " + super.toString();
     }
 }
