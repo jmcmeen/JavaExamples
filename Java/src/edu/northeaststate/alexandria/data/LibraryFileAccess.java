@@ -2,8 +2,15 @@ package edu.northeaststate.alexandria.data;
 
 import edu.northeaststate.alexandria.models.Library;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.ObjectInputStream;
+import java.io.FileInputStream;
 
+import java.io.IOException;
+
+//TODO abstraction
 public class LibraryFileAccess {
     private String filename;
 
@@ -14,22 +21,21 @@ public class LibraryFileAccess {
     public void saveLibraryFile(Library library) throws IOException {
         File file = new File(this.filename);
         String abs = file.getAbsolutePath();
-        ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream(abs));
-        output.writeObject(library);
+        FileOutputStream fos = new FileOutputStream(abs);
+        ObjectOutputStream oos = new ObjectOutputStream(fos);
+        oos.writeObject(library);
         System.out.println("\nFile saved to: " + file.getAbsolutePath());
-        output.close();
+        oos.close();
     }
 
     public void openLibraryFile(Library library) throws IOException, ClassNotFoundException {
-        ObjectInputStream input;
-        input = new ObjectInputStream(new FileInputStream(this.filename));
+        ObjectInputStream input = new ObjectInputStream(new FileInputStream(this.filename));
+
         Library temp = (Library) input.readObject();
 
         library.setName(temp.getName());
         library.setItems(temp.getItems());
 
         input.close();
-
-
     }
 }

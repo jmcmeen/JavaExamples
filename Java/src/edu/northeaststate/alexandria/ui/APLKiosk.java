@@ -9,12 +9,8 @@ public class APLKiosk {
         ConsoleMenu menu = new ConsoleMenu("Welcome to the Alexandria Public Library");
 
         Library alexandria = new Library("APL");
-        Library alexandria2 = new Library("APL");
 
-
-        //menu.addCommand(new LoadLibraryFromFile(alexandria));
-        menu.addCommand(new LoadLibraryFromFile(alexandria2));
-
+        menu.addCommand(new LoadLibraryFromFile(alexandria));
         menu.addCommand(new SaveLibraryToFile(alexandria));
         menu.addCommand(new AddItems(alexandria));
         menu.addCommand(new SearchLibrary(alexandria));

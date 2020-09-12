@@ -2,3 +2,8 @@
 *.iml
 Java/out/
 Java/.idea/
+Java/src/exams
+Java/src/laboratory
+PHP/ada/
+PHP/labs/
+PHP/demos/.idea/
