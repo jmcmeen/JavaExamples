@@ -1,7 +1,5 @@
 package edu.northeaststate.cs2.examples;
 
-import edu.northeaststate.cs2.projects.proj1.encounterbuilder.Monster;
-
 public class ReferenceExample02 {
     public static void main(String[] args) {
         //Create a monster using overload constructor (see ConstructorExample)

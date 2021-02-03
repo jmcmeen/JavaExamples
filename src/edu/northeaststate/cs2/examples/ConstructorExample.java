@@ -1,6 +1,6 @@
 package edu.northeaststate.cs2.examples;
 
-import edu.northeaststate.cs2.projects.proj1.encounterbuilder.Monster;
+
 
 public class ConstructorExample {
     public static void main(String[] args) {

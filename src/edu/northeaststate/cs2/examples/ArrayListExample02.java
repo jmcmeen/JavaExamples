@@ -1,10 +1,33 @@
+/**
+ * -------------------------------------------------
+ * File name: ArrayListExample01.java
+ * Project name: CS1 Examples
+ * -------------------------------------------------
+ * Creator's name: John McMeen
+ * Email: jnmcmeen@northeaststate.edu
+ * Course and section: CISP 1020
+ * Creation date: Feb 2, 2021
+ * -------------------------------------------------
+ */
 package edu.northeaststate.cs2.examples;
-
-import edu.northeaststate.cs2.projects.proj1.encounterbuilder.Monster;
 
 import java.util.ArrayList;
 
-public class ArrayListExample {
+/**
+ * <b>Purpose: Demonstrates ArrayList functionality with Monster objects
+ * - Public methods: main
+ * </b>
+ * <hr>
+ * Date created: Feb 2, 2021
+ * <hr>
+ * @author John McMeen
+ */
+public class ArrayListExample02 {
+    /**
+     * Method description: Main method for application
+     * Date: Feb 2, 2021
+     * @return void
+     */
     public static void main(String[] args) {
         //Declare an ArrayList for type Monster
         ArrayList<Monster> monsters = new ArrayList<Monster>();
