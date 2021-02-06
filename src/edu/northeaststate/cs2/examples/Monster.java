@@ -30,10 +30,10 @@ public class Monster {
     private int hitPoints;
 
     /**
-     * Method description: Parameterized constructor
+     * Method description: Default constructor
      * Date: Apr 5, 2020
      * Parameters: None
-     * Return type: None
+     * @return None
      */
     public Monster() {
         this.name = "";
@@ -44,7 +44,7 @@ public class Monster {
      * Method description: Parameterized constructor
      * Date: Apr 5, 2020
      * Parameters: String name, int hitPoints
-     * Return type: None
+     * @return None
      */
     public Monster(String name, int hitPoints) {
         this.name = name;
@@ -55,7 +55,7 @@ public class Monster {
      * Method description: Returns the hitPoints attribute for Monster
      * Date: Apr 5, 2020
      * Parameters: None
-     * Return type: int
+     * @return int
      */
     public int getHitPoints() {
         return this.hitPoints;
@@ -65,7 +65,7 @@ public class Monster {
      * Method description: Sets the hitPoints attribute for Monster
      * Date: Apr 5, 2020
      * Parameters: int hitPoint
-     * Return type: void
+     * @return void
      */
     public void setHitPoints(int hitPoints) {
         this.hitPoints = hitPoints;
@@ -75,7 +75,7 @@ public class Monster {
      * Method description: Returns the name attribute for Monster
      * Date: Apr 5, 2020
      * Parameters: None
-     * Return type: int
+     * @return int
      */
     public String getName() {
         return this.name;
@@ -85,7 +85,7 @@ public class Monster {
      * Method description: Sets the name attribute for Monster
      * Date: Apr 5, 2020
      * Parameters: String name
-     * Return type: void
+     * @return void
      */
     public void setName(String name) {
         this.name = name;
@@ -95,7 +95,7 @@ public class Monster {
      * Method description: Subtracts an amount of damage from Monster's hit points
      * Date: Apr 5, 2020
      * Parameters: int damage
-     * Return type: void
+     * @return void
      */
     public void takeDamage(int damage) {
         this.hitPoints -= damage;
@@ -105,7 +105,7 @@ public class Monster {
      * Method description: Build a string that represents a Monster
      * Date: Apr 5, 2020
      * Parameters: None
-     * Return type: String
+     * @return String
      */
     @Override
     public String toString() {

@@ -1,8 +1,33 @@
+/**
+ * -------------------------------------------------
+ * File name: StaticMethodExample01.java
+ * Project name: CS2 Examples
+ * -------------------------------------------------
+ * Creator's name: John McMeen
+ * Email: jnmcmeen@northeaststate.edu
+ * Course and section: CISP 1020
+ * Creation date: Feb 2, 2021
+ * -------------------------------------------------
+ */
 package edu.northeaststate.cs2.examples;
 
 import edu.northeaststate.cs2.dndstarter.util.SimpleDiceRoller;
 
+/**
+ * <b>Purpose: Demonstrates static methods
+ * - Public methods: main
+ * </b>
+ * <hr>
+ * Date created: Feb 2, 2021
+ * <hr>
+ * @author John McMeen
+ */
 public class StaticMethodExample01 {
+    /**
+     * Method description: Main method for application
+     * Date: Feb 2, 2021
+     * @return void
+     */
     public static void main(String[] args) {
         //Classes with static methods do no require you to create an object first
 

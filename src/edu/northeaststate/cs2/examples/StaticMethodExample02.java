@@ -1,10 +1,34 @@
+/**
+ * -------------------------------------------------
+ * File name: StaticMethodExample02.java
+ * Project name: CS2 Examples
+ * -------------------------------------------------
+ * Creator's name: John McMeen
+ * Email: jnmcmeen@northeaststate.edu
+ * Course and section: CISP 1020
+ * Creation date: Feb 2, 2021
+ * -------------------------------------------------
+ */
 package edu.northeaststate.cs2.examples;
 
+import java.util.Scanner;
 import edu.northeaststate.cs2.dndstarter.util.Helper;
 
-import java.util.Scanner;
-
+/**
+ * <b>Purpose: Demonstrates static methods
+ * - Public methods: main
+ * </b>
+ * <hr>
+ * Date created: Feb 2, 2021
+ * <hr>
+ * @author John McMeen
+ */
 public class StaticMethodExample02 {
+    /**
+     * Method description: Main method for application
+     * Date: Feb 2, 2021
+     * @return void
+     */
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         String tempInput;
