@@ -24,13 +24,64 @@ public class Item {
     private double value;
 
     /**
+     * Method description: Default constructor
+     * Date: Feb 6, 2021
+     * Parameters: None
+     * @return None
+     */
+    public Item() {
+        this.name = "";
+        this.value = 0;
+    }
+
+    /**
      * Method description: Parameterized constructor
-     * Date: Apr 5, 2020
+     * Date: Feb 6, 2021
      * Parameters: String name, double value
      * @return None
      */
     public Item(String name, double value) {
         this.name = name;
+        this.value = value;
+    }
+
+    /**
+     * Method description: Returns the name attribute for Item
+     * Date: Feb 6, 2021
+     * Parameters: None
+     * @return int
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * Method description: Sets the name attribute for Item
+     * Date: Feb 6, 2021
+     * Parameters: String name
+     * @return void
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * Method description: Returns the value attribute for Item
+     * Date: Feb 6, 2021
+     * Parameters: None
+     * @return double
+     */
+    public double getValue() {
+        return value;
+    }
+
+    /**
+     * Method description: Sets the value attribute for Item
+     * Date: Feb 6, 2021
+     * Parameters: double value
+     * @return void
+     */
+    public void setValue(double value) {
         this.value = value;
     }
 

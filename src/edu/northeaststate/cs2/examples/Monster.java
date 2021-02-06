@@ -75,7 +75,7 @@ public class Monster {
      * Method description: Returns the name attribute for Monster
      * Date: Apr 5, 2020
      * Parameters: None
-     * @return int
+     * @return String
      */
     public String getName() {
         return this.name;
