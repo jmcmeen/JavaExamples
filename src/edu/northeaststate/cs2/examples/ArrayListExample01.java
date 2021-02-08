@@ -1,7 +1,7 @@
 /**
  * -------------------------------------------------
  * File name: ArrayListExample01.java
- * Project name: CS1 Examples
+ * Project name: CS2 Examples
  * -------------------------------------------------
  * Creator's name: John McMeen
  * Email: jnmcmeen@northeaststate.edu
@@ -22,7 +22,6 @@ import java.util.ArrayList;
  * <hr>
  * @author John McMeen
  */
-
 public class ArrayListExample01 {
     /**
      * Method description: Main method for application
