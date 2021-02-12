@@ -14,6 +14,17 @@ package edu.northeaststate.cs1.examples;
 
 import java.util.Scanner;
 
+/**
+ * <b>
+ * Purpose: BasicLoop provides method for rolling dice using a do while loop
+ * - Public methods: roll
+ * </b>
+ * <hr>
+ * Date created: Feb 12, 2021
+ * <hr>
+ * @author John McMeen
+ * Last Updated By: Kayleigh Post
+ */
 public class BasicLoop {
     public static void main(String[] args) {
         int numDice, numSides;
