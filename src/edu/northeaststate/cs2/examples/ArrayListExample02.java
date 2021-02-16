@@ -30,7 +30,7 @@ public class ArrayListExample02 {
      */
     public static void main(String[] args) {
         //Declare an ArrayList for type Monster
-        ArrayList<Monster> monsters = new ArrayList<Monster>();
+        ArrayList<Monster> monsters = new ArrayList<>();
 
         //Monster reference
         Monster m;
@@ -49,16 +49,16 @@ public class ArrayListExample02 {
 
         //We don't even really need the reference m if we are only passing it off to ArrayList and we have an overloaded
         // constructor, because the ArrayList is just storing a reference to an object
-        monsters.add(new Monster("Ghost", 45));
-        monsters.add(new Monster("Ghoul", 23));
-        monsters.add(new Monster("Zombie", 12));
+        monsters.add( new Monster("Ghost", 45) );
+        monsters.add( new Monster("Ghoul", 23) );
+        monsters.add( new Monster("Zombie", 12) );
 
         //Display the number of Monsters in ArrayList
         System.out.println("Monster Count: " + monsters.size() + "\n");
 
         //Display all the Monsters using for loop
         for (int i = 0; i < monsters.size(); i++) {
-            System.out.println(monsters.get(i).toString());
+            System.out.println(monsters.get(i));
         }
 
         //Display break in between output
@@ -70,9 +70,9 @@ public class ArrayListExample02 {
 
         //The for each loop let's you construct a for loop  using an alias for each of the Monsters in the ArrayList
         //Here we use "mo" because m is already used above. You can name the alias whatever you would like
-        for (Monster mo : monsters) {
-            System.out.println(mo.toString());
-            totalHp += mo.getHitPoints();
+        for (Monster currentMonster : monsters) {
+            System.out.println(currentMonster.toString());
+            totalHp += currentMonster.getHitPoints();
         }
 
         //Display total HP

@@ -53,7 +53,7 @@ public class ArrayListExample01 {
         System.out.println();
 
         //or you can access each with a foreach loop, creating an alias for each element in the list
-        for (String currentString: listOfStrings) {
+        for(String currentString: listOfStrings) {
             System.out.println(currentString);
         }
     }
