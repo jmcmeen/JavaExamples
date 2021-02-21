@@ -2,7 +2,7 @@ package edu.northeaststate.cs1.examples;
 
 import java.util.Scanner;
 
-public class BasicLoop {
+public class BasicInputLoop01 {
     public static void main(String[] args) {
         int numDice, numSides;
         Scanner scanner = new Scanner(System.in);
