@@ -25,7 +25,6 @@ public class SimpleMenu {
         System.out.println("1. Option 1");
         System.out.println("2. Option 2");
         System.out.println("3. Exit");
-
     }
     public static void option1(){
         System.out.println("You picked option 1");
@@ -33,7 +32,4 @@ public class SimpleMenu {
     public static void option2(){
         System.out.println("You picked option 2");
     }
-
-
-
 }
