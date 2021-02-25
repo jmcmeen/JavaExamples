@@ -12,19 +12,12 @@
 package edu.northeaststate.cs2.examples;
 
 /**
- * <b>Purpose: Demonstrates primitive data type
- * - Public methods: main
- * </b>
- * <hr>
- * Date created: Feb 6, 2021
- * <hr>
- * @author John McMeen
+ * An application that demonstrates primitive data types
  */
 public class ReferenceExample01 {
     /**
-     * Method description: Main method for application
-     * Date: Feb 2, 2021
-     * @return void
+     * An entry point for the application
+     * @param args
      */
     public static void main(String[] args) {
         //Create an int

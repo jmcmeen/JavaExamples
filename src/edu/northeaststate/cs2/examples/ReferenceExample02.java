@@ -1,6 +1,24 @@
+/**
+ * -------------------------------------------------
+ * File name: ReferenceExample01.java
+ * Project name: CS2 Examples
+ * -------------------------------------------------
+ * Creator's name: John McMeen
+ * Email: jnmcmeen@northeaststate.edu
+ * Course and section: CISP 1020
+ * Creation date: Feb 6, 2021
+ * -------------------------------------------------
+ */
 package edu.northeaststate.cs2.examples;
 
+/**
+ * An application that demonstrates reference types
+ */
 public class ReferenceExample02 {
+    /**
+     * An entry point for the application
+     * @param args
+     */
     public static void main(String[] args) {
         //Create a monster using overload constructor (see ConstructorExample)
         Monster frostGiant = new Monster("Frost Giant", 100);

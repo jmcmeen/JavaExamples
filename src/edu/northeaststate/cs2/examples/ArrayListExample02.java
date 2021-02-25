@@ -24,9 +24,8 @@ import java.util.ArrayList;
  */
 public class ArrayListExample02 {
     /**
-     * Method description: Main method for application
-     * Date: Feb 2, 2021
-     * @return void
+     * Entry point for application
+     * @param args
      */
     public static void main(String[] args) {
         //Declare an ArrayList for type Monster

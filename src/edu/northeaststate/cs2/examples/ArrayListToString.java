@@ -23,9 +23,8 @@ import java.util.ArrayList;
  */
 public class ArrayListToString {
     /**
-     * Method description: Main method for application
-     * Date: Feb 2, 2021
-     * @return void
+     * Entry point for application
+     * @param args
      */
     public static void main(String[] args) {
         //Relying on ArrayList's toString method, which calls each objects toString

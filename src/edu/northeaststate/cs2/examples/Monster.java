@@ -12,28 +12,14 @@
 package edu.northeaststate.cs2.examples;
 
 /**
- * <b>
- * Purpose:
- * - Default constructor and parameterized constructor
- * - Getter methods: getName, getHitPoints
- * - Setter methods: setName, setHitPoints
- * - Public methods: toString, takeDamage
- * </b>
- * <hr>
- * Date created: Apr 5, 2020
- * <hr>
- *
- * @author John McMeen
+ * Models a role playing game monster
  */
 public class Monster {
     private String name;
     private int hitPoints;
 
     /**
-     * Method description: Default constructor
-     * Date: Apr 5, 2020
-     * Parameters: None
-     * @return None
+     * Default class constructor using default values
      */
     public Monster() {
         this.name = "";
@@ -41,10 +27,7 @@ public class Monster {
     }
 
     /**
-     * Method description: Parameterized constructor
-     * Date: Apr 5, 2020
-     * Parameters: String name, int hitPoints
-     * @return None
+     * Parameterized class constructor specifying monster's name and hit points
      */
     public Monster(String name, int hitPoints) {
         this.name = name;

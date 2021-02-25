@@ -12,19 +12,12 @@
 package edu.northeaststate.cs2.examples;
 
 /**
- * <b>Purpose: Demonstrate creating objects from Monster class
- * - Public methods: main
- * </b>
- * <hr>
- * Date created: Feb 2, 2021
- * <hr>
- * @author John McMeen
+ * Demonstrate creating objects from Monster class
  */
 public class ConstructorExample {
     /**
-     * Method description: Main method for application
-     * Date: Feb 2, 2021
-     * @return void
+     * Entry point for application
+     * @param args
      */
     public static void main(String[] args) {
         //Monster reference

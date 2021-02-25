@@ -14,19 +14,12 @@ package edu.northeaststate.cs2.examples;
 import java.util.ArrayList;
 
 /**
- * <b>Purpose: Demonstrates ArrayList functionality with Strings
- * - Public methods: main
- * </b>
- * <hr>
- * Date created: Feb 2, 2021
- * <hr>
- * @author John McMeen
+ * Demonstrates ArrayList functionality with Strings
  */
 public class ArrayListExample01 {
     /**
-     * Method description: Main method for application
-     * Date: Feb 2, 2021
-     * @return void
+     * Entry point for application
+     * @param args
      */
     public static void main(String[] args) {
         //create ArrayList of template type String

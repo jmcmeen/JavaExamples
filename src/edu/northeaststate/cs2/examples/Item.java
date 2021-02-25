@@ -11,22 +11,14 @@
  */
 package edu.northeaststate.cs2.examples;
 /**
- * <b>Purpose: Models an in game Item
- * - Public methods: main
- * </b>
- * <hr>
- * Date created: Feb 6, 2021
- * <hr>
- * @author John McMeen
+ * Models a role playing game Item
  */
 public class Item {
     private String name;
     private double value;
 
     /**
-     * Method description: Default constructor
-     * Date: Feb 6, 2021
-     * Parameters: None
+     * Default class constructor that uses default values
      * @return None
      */
     public Item() {
@@ -35,9 +27,7 @@ public class Item {
     }
 
     /**
-     * Method description: Parameterized constructor
-     * Date: Feb 6, 2021
-     * Parameters: String name, double value
+     * Parameterized class constructor specifying the items name and value
      * @return None
      */
     public Item(String name, double value) {
@@ -46,30 +36,24 @@ public class Item {
     }
 
     /**
-     * Method description: Returns the name attribute for Item
-     * Date: Feb 6, 2021
-     * Parameters: None
-     * @return String
+     * Returns the name attribute for Item
+     * @return
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Method description: Sets the name attribute for Item
-     * Date: Feb 6, 2021
-     * Parameters: String name
-     * @param name
+     * Sets the name attribute for Item
+     * @param name the item's name
      */
     public void setName(String name) {
         this.name = name;
     }
 
     /**
-     * Method description: Returns the value attribute for Item
-     * Date: Feb 6, 2021
-     * Parameters: None
-     * @return double
+     * Returns the value attribute for Item
+     * @return
      */
     public double getValue() {
         return value;
@@ -78,17 +62,15 @@ public class Item {
 
     /**
      * Method description: Sets the value attribute for Item
-     * Date: Feb 6, 2021
-     * @param value
+     * @param value the item's worth in unspecified units
      */
     public void setValue(double value) {
         this.value = value;
     }
 
     /**
-     * Method description: returns a string representation of the object
-     * Date: Feb 2, 2021
-     * @return void
+     * Creates a string representation of the object
+     * @return generated string
      */
     @Override
     public String toString() {

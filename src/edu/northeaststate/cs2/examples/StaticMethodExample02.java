@@ -15,19 +15,11 @@ import java.util.Scanner;
 import edu.northeaststate.cs2.dndstarter.util.Helper;
 
 /**
- * <b>Purpose: Demonstrates static methods
- * - Public methods: main
- * </b>
- * <hr>
- * Date created: Feb 2, 2021
- * <hr>
- * @author John McMeen
+ * An application that demonstrates static methods
  */
 public class StaticMethodExample02 {
     /**
      * Method description: Main method for application
-     * Date: Feb 2, 2021
-     * @return void
      */
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
