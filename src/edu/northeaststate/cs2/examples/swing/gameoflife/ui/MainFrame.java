@@ -1,37 +1,47 @@
-package edu.northeaststate.cs2.examples.guiapps.gameoflife.ui;
+/**
+ * -------------------------------------------------
+ * File name: Main.java
+ * Project name: CS2 Examples
+ * -------------------------------------------------
+ * Creator's name: John McMeen
+ * Email: jnmcmeen@northeaststate.edu
+ * Course and section: CISP 1020
+ * Creation date: Feb 2, 2021
+ * -------------------------------------------------
+ */
+package edu.northeaststate.cs2.examples.swing.gameoflife.ui;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
-public class LifeMainGUI extends JFrame {
+/**
+ * Create a JFrame to house MainPanel
+ */
+public class MainFrame extends JFrame {
     private static final long serialVersionUID = 1L;
-    private LifePanel pnlMain = null;
+    private MainPanel pnlMain = null;
     private JMenuBar mnubarMain = null;
     private JMenu mnuFile = null;
     private JMenu mnuHelp = null;
     private JMenuItem mnuitmExit = null;
     private JMenuItem mnuitmAbout = null;
 
-    public LifeMainGUI() {
-        setTitle("Simple Graphics");
-        setSize(640, 480);
+    /**
+     * Default class constructor
+     */
+    public MainFrame() {
+        setTitle("Conway's Game of Life");
+        setSize(500, 500);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        addComponents();
-        createAndAddMenuBar();
-        addMenuOptions();
-        setupMenuEvents();
-    }
-
-    private void addComponents() {
-        pnlMain = new LifePanel();
+        //add components
+        pnlMain = new MainPanel();
         add(pnlMain);
-    }
 
-    private void createAndAddMenuBar() {
+        //create menu bar
         mnubarMain = new JMenuBar();
 
         mnuFile = new JMenu("File");
@@ -43,9 +53,8 @@ public class LifeMainGUI extends JFrame {
         mnubarMain.add(mnuHelp);
 
         setJMenuBar(mnubarMain);
-    }
 
-    private void addMenuOptions() {
+        //add menu options
         mnuitmExit = new JMenuItem("Exit");
         mnuitmExit.setMnemonic(KeyEvent.VK_X);
         mnuitmExit.setAccelerator(
@@ -55,9 +64,8 @@ public class LifeMainGUI extends JFrame {
         mnuitmAbout = new JMenuItem("About");
         mnuitmAbout.setMnemonic(KeyEvent.VK_B);
         mnuHelp.add(mnuitmAbout);
-    }
 
-    private void setupMenuEvents() {
+        //set up menu events
         mnuitmExit.addActionListener(
                 new ActionListener() {
                     public void actionPerformed(ActionEvent event) {
@@ -70,10 +78,13 @@ public class LifeMainGUI extends JFrame {
         mnuitmAbout.addActionListener(new AboutHandler());
     }
 
+    /**
+     * Implements ActionListener interface and displays JOptionPane
+     */
     private class AboutHandler implements ActionListener {
         public void actionPerformed(ActionEvent arg0) {
             JOptionPane.showMessageDialog(
-                    LifeMainGUI.this,
+                    MainFrame.this,
                     "Based on John Conway's Game of Life. \n" +
                             "The Game of Life, also known simply as Life, \n" +
                             "is a cellular automaton devised by the British \n" +
@@ -86,18 +97,5 @@ public class LifeMainGUI extends JFrame {
                     "Game of Life",
                     JOptionPane.INFORMATION_MESSAGE);
         }
-    }
-
-    public static void main(String[] args) {
-        // Launch the main GUI on the event dispatching thread
-        SwingUtilities.invokeLater(
-                new Runnable() {
-                    @Override
-                    public void run() {
-                        LifeMainGUI mainGUI = new LifeMainGUI();
-                        mainGUI.setVisible(true);
-                    }
-                }
-        );
     }
 }

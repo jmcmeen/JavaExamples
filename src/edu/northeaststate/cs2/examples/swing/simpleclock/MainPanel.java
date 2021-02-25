@@ -1,4 +1,4 @@
-package edu.northeaststate.cs2.examples.guiapps.simple_clock;
+package edu.northeaststate.cs2.examples.swing.simpleclock;
 
 import javax.swing.*;
 import java.awt.*;
