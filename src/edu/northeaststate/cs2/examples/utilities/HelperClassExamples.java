@@ -11,6 +11,8 @@
  */
 package edu.northeaststate.cs2.examples.utilities;
 
+import edu.northeaststate.cs2.dndstarter.util.SimpleDiceRoller; //from the dndstarter.util package
+
 /**
  * Examples using helper classes with static methods
  */
@@ -28,5 +30,11 @@ public class HelperClassExamples {
         //This example encapsulates the printed prompt as well
         s = ConsoleInput.nextString("Enter some more text: ");
         System.out.println(s);
+
+        //The SimpleDiceRoller class has a static method named roll
+        //Roll a D20 5 times
+        for (int i = 0; i < 5; i++) {
+            System.out.println("D20 = " + SimpleDiceRoller.roll(20));
+        }
     }
 }
