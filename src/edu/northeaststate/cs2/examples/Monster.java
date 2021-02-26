@@ -14,7 +14,7 @@ package edu.northeaststate.cs2.examples;
 /**
  * Models a role playing game monster
  */
-public class Monster {
+public class Monster{
     private String name;
     private int hitPoints;
 
