@@ -11,26 +11,15 @@
 package edu.northeaststate.cs2.dndstarter.util;
 
 /**
- * <b>
- * Purpose: Helper class with static methods
- * - No explicit constructor
- * - Getter methods: NA
- * - Setter methods: NA
- * - Public methods: isPositiveInteger, isPositiveDouble
- * </b>
- * <hr>
- * Date created: Mar 24, 2020
- * <hr>
- *
- * @author John McMeen
+ * Helper class with static methods for parsing String input
  */
 public class Helper {
+
     /**
-     * Method description: Takes a string and converts it to a positive integer,
+     * Takes a string and converts it to a positive integer,
      * if input string is not a positive integer (text or integer < 1) the method will return a -1
-     * Date: Mar 24, 2020
-     * Parameters: String testString
-     * Return type: int
+     * @param testString input String
+     * @return a positive int
      */
     public static int isPositiveInteger(String testString) {
         int x;
@@ -51,9 +40,8 @@ public class Helper {
     /**
      * Method description: Takes a string and converts it to a positive double,
      * if input string is not a positive double (text or number not greater than 0) the method will return a -1.0
-     * Date: Mar 24, 2020
-     * Parameters: String testString
-     * Return type: double
+     * @param testString input String
+     * @return a positive double
      */
     public static double isPositiveDouble(String testString) {
         double x;
