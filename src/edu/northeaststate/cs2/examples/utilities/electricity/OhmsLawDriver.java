@@ -23,7 +23,7 @@ import edu.northeaststate.cs2.examples.utilities.electricity.statichelper.OhmsLa
 /**
  * Application to demonstrate Ohm's Law calculations using two different paradigms, Object Oriented and Static Helper Classes
  */
-public class OhmsLawDemo {
+public class OhmsLawDriver {
     /**
      * Entry point for the application
      * @param args command line arguments
