@@ -1,7 +1,11 @@
 package edu.northeaststate.cs2.examples.inheritance.farmland;
 
 public abstract class Animal {
-    protected String name;
+    private String name;
+
+    public Animal(){
+
+    }
 
     public Animal(String name) {
         this.name = name;

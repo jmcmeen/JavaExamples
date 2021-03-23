@@ -11,10 +11,12 @@
  */
 package edu.northeaststate.cs2.examples;
 
+import java.util.Objects;
+
 /**
  * Models a role playing game monster
  */
-public class Monster{
+public class Monster {
     private String name;
     private int hitPoints;
 
@@ -22,7 +24,7 @@ public class Monster{
      * Default class constructor using default values
      */
     public Monster() {
-        this.name = "";
+        name = "";
         this.hitPoints = 0;
     }
 
@@ -92,11 +94,27 @@ public class Monster{
      */
     @Override
     public String toString() {
-        return "Monster [name=" +
+        String out = "Monster [name=" +
                 this.name +
                 ", hitPoints=" +
                 this.hitPoints +
                 "]";
+
+        return out;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || this.getClass() != o.getClass()) return false;
+        Monster monster = (Monster) o;
+        return this.hitPoints == monster.hitPoints &&
+                Objects.equals(name, monster.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, hitPoints);
     }
 }
 

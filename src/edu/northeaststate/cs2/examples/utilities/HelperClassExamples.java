@@ -23,18 +23,22 @@ public class HelperClassExamples {
      */
     public static void main(String[] args) {
         //ConsoleInput helper class encapsulates methods that use the Scanner class to accept input
-        System.out.print("Enter some text: ");
+        print("Enter some text: ");
         String s = ConsoleInput.nextString();
-        System.out.println(s);
+        print(s);
 
         //This example encapsulates the printed prompt as well
         s = ConsoleInput.nextString("Enter some more text: ");
-        System.out.println(s);
+        print(s);
 
         //The SimpleDiceRoller class has a static method named roll
         //Roll a D20 5 times
         for (int i = 0; i < 5; i++) {
-            System.out.println("D20 = " + SimpleDiceRoller.roll(20));
+            print("D20 = " + SimpleDiceRoller.roll(20));
         }
+    }
+
+    public static void print(String p){
+        System.out.println(p);
     }
 }

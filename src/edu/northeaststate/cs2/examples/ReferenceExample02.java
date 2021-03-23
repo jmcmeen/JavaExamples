@@ -21,7 +21,9 @@ public class ReferenceExample02 {
      */
     public static void main(String[] args) {
         //Create a monster using overload constructor (see ConstructorExample)
-        Monster frostGiant = new Monster("Frost Giant", 100);
+        Monster frostGiant;
+
+        frostGiant = new Monster("Frost Giant", 100);
 
         //View the Monster
         System.out.println("The Frost Giant's hp is: " + frostGiant.getHitPoints() + "\n");

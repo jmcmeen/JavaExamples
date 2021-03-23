@@ -32,10 +32,10 @@ public class MainFrame extends JFrame {
      * Default class constructor
      */
     public MainFrame() {
-        setTitle("Conway's Game of Life");
-        setSize(500, 500);
-        setLocationRelativeTo(null);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setTitle("Conway's Game of Life");
+        this.setSize(500, 500);
+        this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //add components
         pnlMain = new MainPanel();

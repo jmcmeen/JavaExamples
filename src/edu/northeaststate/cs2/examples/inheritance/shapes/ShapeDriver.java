@@ -37,7 +37,7 @@ public class ShapeDriver {
 
         //Loop through ArrayList and each Shape's toString method
         for (Shape shape : shapes) {
-            System.out.println(shape.toString());
+            System.out.println(shape.calculateArea());
         }
     }
 }

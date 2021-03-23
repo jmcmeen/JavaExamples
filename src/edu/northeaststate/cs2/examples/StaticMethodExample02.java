@@ -32,12 +32,14 @@ public class StaticMethodExample02 {
         //Just use the name of the class and the method you want to call
         System.out.print("Enter a positive integer: ");
         tempInput = keyboard.nextLine();
+        parsedInteger = Helper.isPositiveInteger(tempInput);
 
         //while the parsed integer is not positive, keep getting input
-        while ((parsedInteger = Helper.isPositiveInteger(tempInput)) == -1) {
+        while (parsedInteger == -1) {
             System.out.println(tempInput + " is not a positive integer.");
             System.out.print("Enter a positive integer: ");
             tempInput = keyboard.nextLine();
+            parsedInteger = Helper.isPositiveInteger(tempInput);
         }
 
         System.out.println(parsedInteger + " is a positive integer.");

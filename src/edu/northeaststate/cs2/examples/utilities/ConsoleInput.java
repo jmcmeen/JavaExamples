@@ -24,6 +24,7 @@ public class ConsoleInput {
     public static String nextString(){
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
+
     }
 
     /**
