@@ -30,7 +30,7 @@ public class Helper {
             if (x < 1) {
                 x = -1;
             }
-        } catch (Exception e) {
+        } catch (NumberFormatException e) {
             x = -1;
         }
 
@@ -51,7 +51,7 @@ public class Helper {
             if (!(x > 0.0)) {
                 x = -1.0;
             }
-        } catch (Exception e) {
+        } catch (NumberFormatException e) {
             x = -1.0;
         }
 

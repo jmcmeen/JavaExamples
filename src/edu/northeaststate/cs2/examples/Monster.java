@@ -94,13 +94,12 @@ public class Monster {
      */
     @Override
     public String toString() {
-        String out = "Monster [name=" +
-                this.name +
-                ", hitPoints=" +
-                this.hitPoints +
-                "]";
-
-        return out;
+        final StringBuilder sb = new StringBuilder();
+        sb.append("Monster{");
+        sb.append("name='").append(name).append('\'');
+        sb.append(", hitPoints=").append(hitPoints);
+        sb.append('}');
+        return sb.toString();
     }
 
     @Override

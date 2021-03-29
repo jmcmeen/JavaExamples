@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class ReadFile {
     public static void main(String[] args) {
         try {
-            File myObj = new File("src/edu/northeaststate/cs2/examples/txtfiles/test.txt");
+            File myObj = new File("src/edu/northeaststate/cs2/examples/txtfiles/hello.txt");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
@@ -15,8 +15,8 @@ public class ReadFile {
             }
             myReader.close();
         } catch (FileNotFoundException e) {
-            System.out.println("The file was not found");
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+            //e.printStackTrace();
         }
     }
 }

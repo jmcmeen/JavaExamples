@@ -47,12 +47,14 @@ public class StaticMethodExample02 {
 
         System.out.print("Enter a positive double: ");
         tempInput = keyboard.nextLine();
+        parsedDouble = Helper.isPositiveDouble(tempInput);
 
         //while the parsed double is not positive, keep getting input
-        while ((parsedDouble = Helper.isPositiveDouble(tempInput)) == -1) {
+        while (Helper.isPositiveDouble(tempInput) == -1) {
             System.out.println(tempInput + " is not a positive double.");
             System.out.print("Enter a positive double: ");
             tempInput = keyboard.nextLine();
+            parsedDouble = Helper.isPositiveDouble(tempInput);
         }
 
         System.out.println(parsedDouble + " is a positive double.");
