@@ -86,21 +86,22 @@ public class Monster {
         this.hitPoints -= damage;
     }
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Monster{");
+        sb.append("name='").append(name).append('\'');
+        sb.append(", hitPoints=").append(hitPoints);
+        sb.append('}');
+        return sb.toString();
+    }
+
     /**
      * Method description: Build a string that represents a Monster
      * Date: Apr 5, 2020
      * Parameters: None
      * @return String
      */
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder();
-        sb.append("Monster{");
-        sb.append("name='").append(name).append('\'');
-        sb.append(", hitPoints=").append(hitPoints);
-        sb.append('}');
-        return sb.toString();
-    }
+
 
     @Override
     public boolean equals(Object o) {

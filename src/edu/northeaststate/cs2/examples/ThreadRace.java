@@ -39,7 +39,7 @@ class StringConcatThread implements Runnable {
         System.out.println("Thread String Concat started...");
         long start = System.nanoTime();
         String s = "";
-        for (int i = 0; i <1000000; i++) {
+        for (int i = 0; i <100000; i++) {
             s+= "Don't Panic";
         }
         long finish = System.nanoTime();
@@ -58,7 +58,7 @@ class StringBuilderThread implements Runnable {
         System.out.println("Thread String Builder started...");
         long start = System.nanoTime();
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i <1000000; i++) {
+        for (int i = 0; i <100000; i++) {
             sb.append("Don't Panic");
         }
         long finish = System.nanoTime();
