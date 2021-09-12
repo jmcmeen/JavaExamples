@@ -17,7 +17,7 @@ public class ArithmeticOperators {
     /**
      * Method Name: main
      * Method Description: entry point for the program
-     * @param args args is not used in this program
+     * @param args not used in this program
      */
     public static void main(String[] args) {
         //Create some variables to use in this program

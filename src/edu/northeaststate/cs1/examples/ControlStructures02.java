@@ -19,7 +19,7 @@ public class ControlStructures02 {
     /**
      * Method Name: main
      * Method Description: entry point for the program
-     * @param args // args is not used in this example
+     * @param args not used in this program
      */
     public static void main(String[] args) {
         //create program variables and Scanner for user input

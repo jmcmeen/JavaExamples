@@ -19,7 +19,7 @@ public class SimpleConsoleMenu {
     /**
      * Method Name: main
      * Method Description: entry point for the program
-     * @param args // args is not used in this example
+     * @param args not used in this program
      */
     public static void main(String[] args) {
         //setup Scanner and variables needed
