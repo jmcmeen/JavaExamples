@@ -42,7 +42,7 @@ public class AssignmentOperators {
         //Subtraction assignment works the same way
         intOperand1 -= 5;
         System.out.println("intOperand1 = " + intOperand1);
-        
+
         //The reference linked above has an exhaustive list of assignment operators and their equivalences
     }
 }
