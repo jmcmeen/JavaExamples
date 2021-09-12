@@ -1,18 +1,26 @@
 /**
  * -------------------------------------------------
- * File name: CircleDriver.java
- * Project name: CS1 Examples
- * -------------------------------------------------
- * Creator's name: John McMeen
+ * File Name: CircleDriver.java
+ * Project Name: CS1 Examples
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
- * Course and section: CISP 1020
- * Creation date: Feb 12, 2021
+ * Course & Section: CISP 1010
  * Last Updated By: Kayleigh Post
  * -------------------------------------------------
  */
-package edu.northeaststate.cs1.examples;
+package edu.northeaststate.cs1.examples.objects;
 
+/**
+ * Class Name: CircleDriver
+ * Purpose: Demonstrates the use of the model class, Circle, to create an object of that class
+ *          and various ways to use it.
+ */
 public class CircleDriver {
+    /**
+     * Method Name: main
+     * Method Description: entry point for the program
+     * @param args // args is not used in this example
+     */
     public static void main(String[] args) {
         //using default constructor to create Circle
         Circle circle1 = new Circle();
@@ -47,30 +55,4 @@ public class CircleDriver {
         }
     }
 }
-class Circle {
-    private double radius;
 
-    public Circle() {
-        radius = 1;
-    }
-
-    public Circle(double newRadius) {
-        radius = newRadius;
-    }
-
-    public double calculateArea() {
-        return radius * radius * Math.PI;
-    }
-
-    public double calculateCircumference() {
-        return 2 * radius * Math.PI;
-    }
-
-    public double getRadius() {
-        return radius;
-    }
-
-    public void setRadius(double newRadius) {
-        radius = newRadius;
-    }
-}

@@ -19,7 +19,6 @@ public class Item {
 
     /**
      * Default class constructor that uses default values
-     * @return None
      */
     public Item() {
         this.name = "";
@@ -28,7 +27,6 @@ public class Item {
 
     /**
      * Parameterized class constructor specifying the items name and value
-     * @return None
      */
     public Item(String name, double value) {
         this.name = name;
@@ -37,7 +35,6 @@ public class Item {
 
     /**
      * Returns the name attribute for Item
-     * @return
      */
     public String getName() {
         return name;

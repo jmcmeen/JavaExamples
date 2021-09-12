@@ -1,7 +1,7 @@
 /**
  * -------------------------------------------------
- * File Name: ForLoop.java
- * Project Name: CS1 Examples
+ * File name: MathRandom.java
+ * Project name: CS1 Examples
  * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course & Section: CISP 1010
@@ -10,22 +10,17 @@
  */
 package edu.northeaststate.cs1.examples;
 /**
- * Class Name: ForLoop
- * Purpose: Demonstrates how to use a for loop to print each element in an array
+ * Class Name: MathRandom
+ * Purpose: Demonstrates how to use the Math class and its random() method
  */
-public class ForLoop {
+public class MathRandom {
     /**
      * Method Name: main
      * Method Description: entry point for the program
      * @param args // args is not used in this example
      */
     public static void main(String[] args) {
-        //creat an array of integer values
-        int[] myIntegers = {0,32,65,127,23225232,-1};
-
-        //use a for loop to visit each element in the array
-        for (int i = 0; i < myIntegers.length; i++) {
-            System.out.print(myIntegers[i] + " ");
-        }
+        //TODO: explain Math.Random
+        System.out.println(Math.random());
     }
 }

@@ -1,10 +1,10 @@
 /**
  * -------------------------------------------------
- * File name: SimpleMenu.java
- * Project name: CS1 Examples
+ * File Name: SimpleMenu.java
+ * Project Name: CS1 Examples
  * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
- * Course & Section: CISP 1020
+ * Course & Section: CISP 1010
  * -------------------------------------------------
  */
 package edu.northeaststate.cs1.examples;
@@ -14,11 +14,11 @@ import java.util.Scanner;
 /**
  * Class Name: SimpleConsoleMenu
  * Purpose: Demonstrates a simple design for a console menu
- * Notes: Requires matrix.jar to run
  */
 public class SimpleConsoleMenu {
     /**
-     * Entry point for application
+     * Method Name: main
+     * Method Description: entry point for the program
      * @param args // args is not used in this example
      */
     public static void main(String[] args) {

@@ -2,25 +2,35 @@
  * -------------------------------------------------
  * File name: RandomNumbers.java
  * Project name: CS1 Examples
- * -------------------------------------------------
- * Creator's name: John McMeen
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
- * Course and section: CISP 1020
- * Creation date: Aug 30, 2020
+ * Course & Section: CISP 1010
  * -------------------------------------------------
  */
 package edu.northeaststate.cs1.examples;
 
 import java.util.Random;
 
+/**
+ * Class Name: RandomNumbers
+ * Purpose: Demonstrates the use of the Random class
+ */
 public class RandomNumbers {
+    /**
+     * Method Name: main
+     * Method Description: entry point for the program
+     * @param args // args is not used in this example
+     */
     public static void main(String[] args) {
         Random random = new Random();
         final int NUM_RANDOM = 20; //create a constant to use for max number of random numbers to generate.
         final int UPPER_BOUND = 10; //used with a Random object as the upper bound, nextInt will generate 0-9
+        int currentInt;
 
+        // create a loop to get NUM_RANDOM random integers
         for(int i = 0; i < NUM_RANDOM; i++){
-            System.out.print(random.nextInt(10) + " ");
+            currentInt = random.nextInt(UPPER_BOUND);
+            System.out.print(currentInt + " ");
         }
     }
 }
