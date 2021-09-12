@@ -12,6 +12,8 @@ package edu.northeaststate.cs1.examples;
 /**
  * Class Name: ArithmeticOperators
  * Purpose: Demonstrates basic arithmetic operators using integer variables
+ * References:
+ *      https://www.w3schools.com/java/java_operators.asp
  */
 public class ArithmeticOperators {
     /**
@@ -20,12 +22,12 @@ public class ArithmeticOperators {
      * @param args not used in this program
      */
     public static void main(String[] args) {
-        //Create some variables to use in this program
+        //Declare some variables to use in this program
         int intOperand1;
         int intOperand2;
         int intResult;
 
-        //Give the integer variables values
+        //Assign values to the integer variables
         intOperand1 = 32;
         intOperand2 = 16;
 
@@ -48,5 +50,15 @@ public class ArithmeticOperators {
         //Modulus the values and display result (remainder)
         intResult = intOperand1 % intOperand2;
         System.out.println(intOperand1 + " % " + intOperand2 + " = " + intResult);
+
+        //Increment the value by 1
+        System.out.print("Current value is " + intOperand1);
+        intOperand1++;
+        System.out.println(" new value is " + intOperand1);
+
+        //Decrement the value by 1
+        System.out.print("Current value is " + intOperand1);
+        intOperand1--;
+        System.out.println(" new value is " + intOperand1);
     }
 }
