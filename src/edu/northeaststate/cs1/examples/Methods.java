@@ -9,10 +9,9 @@
  */
 package edu.northeaststate.cs1.examples;
 
-
 /**
  * Class Name: Methods
- * Purpose: Demonstrates basic arithmetic operators using integer variables
+ * Purpose: Demonstrates creating and invoking our own methods in Java
  * References:
  *      https://www.w3schools.com/java/java_methods.asp
  */
@@ -23,16 +22,22 @@ public class Methods{
      * @param args not used in this program
      */
     public static void main(String[] args) {
+        //We have overloaded the printWelcomeMessage by creating 3 distinct ways to call it. Methods can be overloaded
+        //by reusing the same method name, but changing the parameters in which it is called, or the return type of
+        //the method.
+
+        //The printWelcomeMessage method that uses no parameters, is less flexible than the other two examples that
+        //let you specify the values to use in the method through the parameter list.
         printWelcomeMessage();
         printWelcomeMessage("Ben", "CISP 1010", "CS Examples");
         printWelcomeMessage("Ben - CISP 1010 - CS Examples");
 
+        //getRandomInt returns an integer so we can set up a variable to catch what it returns
         int intVar = getRandomInt(10);
-
         System.out.println(intVar);
 
+        //getRandomInt has also been overloaded, notice each method works a little differently
         intVar = getRandomInt(1,12);
-
         System.out.println(intVar);
     }
 
@@ -68,11 +73,6 @@ public class Methods{
         System.out.println("*********************************************");
         System.out.println("* " + message + " *");
         System.out.println("*********************************************");
-    }
-
-    public static int addTwoIntegers(int a, int b){
-        int c = a + b;
-        return c;
     }
 
     /**
