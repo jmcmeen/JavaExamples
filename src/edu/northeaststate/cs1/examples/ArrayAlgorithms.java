@@ -51,7 +51,6 @@ public class ArrayAlgorithms {
         }
     }
 
-
     /**
      * Method Name: swap
      * Method Description: Given an integer array, swaps values at index1 and index2
@@ -63,6 +62,25 @@ public class ArrayAlgorithms {
         int temp = array[index1];
         array[index1] = array[index2];
         array[index2] = temp;
+    }
+
+    /**
+     * Method Name: linearSearch
+     * Method Description: Given an array and a search term, the method iteratively searches for the search term, if found
+     * returns the index of found term, if not returns a -1
+     * @param array
+     * @param searchTerm
+     * @return
+     */
+    public static int linearSearch(int[] array, int searchTerm){
+        int foundIndex = -1;
+        for (int i = 0; i < array.length; i++) {
+            if(array[i] == searchTerm){
+                foundIndex = i;
+                break;
+            }
+        }
+        return foundIndex;
     }
 
     /**
@@ -91,24 +109,5 @@ public class ArrayAlgorithms {
         }
 
         return -1;
-    }
-
-    /**
-     * Method Name: linearSearch
-     * Method Description: Given an array and a search term, the method iteratively searches for the search term, if found
-     * returns the index of found term, if not returns a -1
-     * @param array
-     * @param searchTerm
-     * @return
-     */
-    public static int linearSearch(int[] array, int searchTerm){
-        int foundIndex = -1;
-        for (int i = 0; i < array.length; i++) {
-            if(array[i] == searchTerm){
-                foundIndex = i;
-                break;
-            }
-        }
-        return foundIndex;
     }
 }
