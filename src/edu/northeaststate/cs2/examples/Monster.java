@@ -67,7 +67,6 @@ public class Monster {
 
     /**
      * Method description: Sets the name attribute for Monster
-     * Date: Apr 5, 2020
      * Parameters: String name
      * @return void
      */
@@ -77,7 +76,6 @@ public class Monster {
 
     /**
      * Method description: Subtracts an amount of damage from Monster's hit points
-     * Date: Apr 5, 2020
      * Parameters: int damage
      * @return void
      */
@@ -87,7 +85,6 @@ public class Monster {
 
     /**
      * Method description: Build a string that represents a Monster
-     * Date: Apr 5, 2020
      * Parameters: None
      * @return String
      */
@@ -101,7 +98,6 @@ public class Monster {
 
     /**
      * Method description: Compares two monsters
-     * Date: Apr 5, 2020
      * Parameters: None
      * @return String
      */
@@ -115,7 +111,6 @@ public class Monster {
 
     /**
      * Method description: Generates a hash code for Monster
-     * Date: Apr 5, 2020
      * Parameters: None
      * @return String
      */
