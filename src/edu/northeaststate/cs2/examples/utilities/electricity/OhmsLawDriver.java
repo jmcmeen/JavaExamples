@@ -30,6 +30,12 @@ public class OhmsLawDriver {
      */
     public static void main(String[] args) {
         //------------------------------------------------------------------
+        //Static helper class example
+        System.out.println(OhmsLawHelper.getOhms(9, .005));
+        System.out.println(OhmsLawHelper.getVolts(1800, .005));
+        System.out.println(OhmsLawHelper.getAmps(1800,9));
+
+        //------------------------------------------------------------------
         //Object-oriented Ohms Law demonstration
         Ohm o = new Ohm(.005, 9);
         System.out.println(o.getOhms());
@@ -39,11 +45,5 @@ public class OhmsLawDriver {
 
         Amp a = new Amp(1800, 9);
         System.out.println(a.getAmps());
-
-        //------------------------------------------------------------------
-        //Static helper class example
-        System.out.println(OhmsLawHelper.getOhms(9, .005));
-        System.out.println(OhmsLawHelper.getVolts(1800, .005));
-        System.out.println(OhmsLawHelper.getAmps(1800,9));
     }
 }

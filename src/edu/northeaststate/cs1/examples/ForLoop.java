@@ -27,5 +27,9 @@ public class ForLoop {
         for (int i = 0; i < myIntegers.length; i++) {
             System.out.print(myIntegers[i] + " ");
         }
+
+        for (int myInt : myIntegers) {
+            System.out.println(myInt);
+        }
     }
 }
