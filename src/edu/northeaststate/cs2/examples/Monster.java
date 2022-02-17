@@ -6,7 +6,6 @@
  * Creator's name: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: 1020
- * Creation date: Apr 5, 2020
  * -------------------------------------------------
  */
 package edu.northeaststate.cs2.examples;
@@ -86,7 +85,12 @@ public class Monster {
         this.hitPoints -= damage;
     }
 
-    @Override
+    /**
+     * Method description: Build a string that represents a Monster
+     * Date: Apr 5, 2020
+     * Parameters: None
+     * @return String
+     */
     public String toString() {
         final StringBuilder sb = new StringBuilder("Monster{");
         sb.append("name='").append(name).append('\'');
@@ -96,14 +100,11 @@ public class Monster {
     }
 
     /**
-     * Method description: Build a string that represents a Monster
+     * Method description: Compares two monsters
      * Date: Apr 5, 2020
      * Parameters: None
      * @return String
      */
-
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || this.getClass() != o.getClass()) return false;
@@ -112,7 +113,12 @@ public class Monster {
                 Objects.equals(name, monster.name);
     }
 
-    @Override
+    /**
+     * Method description: Generates a hash code for Monster
+     * Date: Apr 5, 2020
+     * Parameters: None
+     * @return String
+     */
     public int hashCode() {
         return Objects.hash(name, hitPoints);
     }
