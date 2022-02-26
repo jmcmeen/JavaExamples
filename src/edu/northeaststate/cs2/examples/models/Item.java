@@ -2,18 +2,15 @@
  * -------------------------------------------------
  * File name: Item.java
  * Project name: CS2 Examples
- * -------------------------------------------------
  * Creator's name: John McMeen
  * Email: jnmcmeen@northeaststate.edu
- * Course and section: CISP 1020
- * Creation date: Feb 6, 2021
  * -------------------------------------------------
  */
-package edu.northeaststate.cs2.examples;
+package edu.northeaststate.cs2.examples.models;
 /**
  * Models a role playing game Item
  */
-public class Item {
+public class Item{
     private String name;
     private double value;
 

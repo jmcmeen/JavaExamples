@@ -1,7 +1,7 @@
 package edu.northeaststate.cs2.examples.inheritance.farmland;
 
-public class Wilbur extends Horse{
-    public Wilbur(String name) {
+public class MrEd extends Horse{
+    public MrEd(String name) {
         super(name);
     }
 

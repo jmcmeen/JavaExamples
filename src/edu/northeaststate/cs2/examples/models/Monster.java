@@ -2,13 +2,12 @@
  * -------------------------------------------------
  * File name: Monster.java
  * Project name: D&D Encounters
- * -------------------------------------------------
  * Creator's name: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: 1020
  * -------------------------------------------------
  */
-package edu.northeaststate.cs2.examples;
+package edu.northeaststate.cs2.examples.models;
 
 import java.util.Objects;
 

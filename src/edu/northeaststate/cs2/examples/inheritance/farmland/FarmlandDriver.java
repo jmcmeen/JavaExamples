@@ -25,17 +25,17 @@ public class FarmlandDriver {
     public static void main(String[] args) {
         ArrayList<Animal> animals = new ArrayList<>();
 
-        Turkey turkey = new Turkey("Wilbur the Turkey");
+        Turkey turkey = new Turkey("Wilma the Turkey");
         Horse horse = new Horse("Generic Horse");
         Cow cow = new Cow("Lucy the Cow");
         Frog frog = new Frog("Bud Wiser");
-        Wilbur wilbur = new Wilbur("Mr Ed.");
+        MrEd mrEd = new MrEd("Mr Ed.");
 
         animals.add(turkey);
         animals.add(horse);
         animals.add(cow);
         animals.add(frog);
-        animals.add(wilbur);
+        animals.add(mrEd);
 
         for(Animal a: animals){
             System.out.println(a.getName() + " says " + a.makeSound());

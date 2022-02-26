@@ -9,7 +9,9 @@
  * Creation date: Feb 2, 2021
  * -------------------------------------------------
  */
-package edu.northeaststate.cs2.examples;
+package edu.northeaststate.cs2.examples.arraylists;
+
+import edu.northeaststate.cs2.examples.models.Monster;
 
 import java.util.ArrayList;
 

@@ -2,14 +2,12 @@
  * -------------------------------------------------
  * File name: StaticMethodExample02.java
  * Project name: CS2 Examples
- * -------------------------------------------------
  * Creator's name: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: CISP 1020
- * Creation date: Feb 2, 2021
  * -------------------------------------------------
  */
-package edu.northeaststate.cs2.examples;
+package edu.northeaststate.cs2.examples.staticmethods;
 
 import java.util.Scanner;
 import edu.northeaststate.cs2.dndstarter.util.Helper;

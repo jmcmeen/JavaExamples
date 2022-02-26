@@ -9,7 +9,7 @@
  * Creation date: Feb 2, 2021
  * -------------------------------------------------
  */
-package edu.northeaststate.cs2.examples;
+package edu.northeaststate.cs2.examples.arraylists;
 
 import java.util.ArrayList;
 

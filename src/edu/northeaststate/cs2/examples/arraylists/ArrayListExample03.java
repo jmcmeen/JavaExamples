@@ -1,4 +1,4 @@
-package edu.northeaststate.cs2.examples;
+package edu.northeaststate.cs2.examples.arraylists;
 
 import java.util.ArrayList;
 

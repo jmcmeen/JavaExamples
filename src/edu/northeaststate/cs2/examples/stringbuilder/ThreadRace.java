@@ -9,7 +9,7 @@
  * Creation date: Feb 2, 2021
  * -------------------------------------------------
  */
-package edu.northeaststate.cs2.examples;
+package edu.northeaststate.cs2.examples.stringbuilder;
 
 /**
  * A class to demonstrate interfaces, threads and computation time needed for String Builder versus using String concatenation

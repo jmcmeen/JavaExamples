@@ -9,7 +9,7 @@
  * Creation date: Feb 2, 2021
  * -------------------------------------------------
  */
-package edu.northeaststate.cs2.examples;
+package edu.northeaststate.cs2.examples.staticmethods;
 
 import edu.northeaststate.cs2.dndstarter.util.SimpleDiceRoller;
 

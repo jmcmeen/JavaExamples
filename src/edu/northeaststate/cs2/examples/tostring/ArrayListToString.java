@@ -9,7 +9,9 @@
  * Creation date: Feb 6, 2021
  * -------------------------------------------------
  */
-package edu.northeaststate.cs2.examples;
+package edu.northeaststate.cs2.examples.tostring;
+
+import edu.northeaststate.cs2.examples.models.Item;
 
 import java.util.ArrayList;
 /**

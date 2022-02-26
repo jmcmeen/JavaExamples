@@ -2,14 +2,13 @@
  * -------------------------------------------------
  * File name: ConstructorExample.java
  * Project name: CS2 Examples
- * -------------------------------------------------
  * Creator's name: John McMeen
  * Email: jnmcmeen@northeaststate.edu
- * Course and section: CISP 1020
- * Creation date: Feb 6, 2021
  * -------------------------------------------------
  */
-package edu.northeaststate.cs2.examples;
+package edu.northeaststate.cs2.examples.constructors;
+
+import edu.northeaststate.cs2.examples.models.Monster;
 
 /**
  * Demonstrate creating objects from Monster class
