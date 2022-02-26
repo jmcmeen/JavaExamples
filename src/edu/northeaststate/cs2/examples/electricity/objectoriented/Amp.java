@@ -9,29 +9,29 @@
  * Creation date: Mar 1, 2021
  * -------------------------------------------------
  */
-package edu.northeaststate.cs2.examples.utilities.electricity.objectoriented;
+package edu.northeaststate.cs2.examples.electricity.objectoriented;
 
 /**
- * Models voltage in volts calculated from Ohm's Law
+ * Models current in amps calculated from Ohm's Law
  */
-public class Volt {
-    private double amps, ohms;
+public class Amp {
+    public double ohms, volts;
 
     /**
      * Parameterized constructor
-     * @param amps current in amps
-     * @param ohms resistance in ohms
+     * @param ohms resistance in Ohms
+     * @param volts voltage in volts
      */
-    public Volt(double amps, double ohms) {
-        this.amps = amps;
+    public Amp(double ohms, double volts) {
         this.ohms = ohms;
+        this.volts = volts;
     }
 
     /**
-     * Calculates voltage using Ohm's Law
-     * @return calculated volts
+     * Calculates current in amps using Ohm's Law
+     * @return calculated amps
      */
-    public double getVolts(){
-        return amps * ohms;
+    public double getValue(){
+        return volts/ ohms;
     }
 }

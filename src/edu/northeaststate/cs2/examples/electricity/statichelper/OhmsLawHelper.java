@@ -9,7 +9,7 @@
  * Creation date: Mar 1, 2021
  * -------------------------------------------------
  */
-package edu.northeaststate.cs2.examples.utilities.electricity.statichelper;
+package edu.northeaststate.cs2.examples.electricity.statichelper;
 
 /**
  * Class that provides static methods to perform various calculations using Ohm's Law
@@ -31,7 +31,7 @@ public class OhmsLawHelper {
      * @param amps current in amps
      * @return calculated volts
      */
-    public static double getVolts(double ohms, double amps){
+    public static double getVolts(double amps, double ohms){
         return amps * ohms;
     }
 
@@ -41,7 +41,7 @@ public class OhmsLawHelper {
      * @param amps current in amps
      * @return calculated Ohms
      */
-    public static double getOhms(double volts, double amps){
+    public static double getOhms(double amps, double volts){
         return volts/amps;
     }
 }

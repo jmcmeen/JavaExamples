@@ -11,6 +11,6 @@ package edu.northeaststate.cs2.examples.inheritance.exceptions.bankaccount;
 
 public class InsufficientFundsException extends Exception{
     public InsufficientFundsException() {
-        super("Insufficient Funds");
+        super("Insufficient funds for transaction requested");
     }
 }
