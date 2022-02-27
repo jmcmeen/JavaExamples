@@ -1,9 +1,9 @@
 /**
  * -------------------------------------------------
  * File name: AppendFile.java
- * Project name: CS2 Examples
+ * Project Name: CS2 Examples
  * -------------------------------------------------
- * Creator's name: John McMeen
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: CISP 1020
  * Creation date: Mar 1, 2021

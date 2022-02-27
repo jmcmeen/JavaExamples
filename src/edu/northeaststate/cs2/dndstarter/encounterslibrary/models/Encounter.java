@@ -1,9 +1,9 @@
 /**
  * -------------------------------------------------
  * File name: Encounter.java
- * Project name: Monster Lab!
+ * Project Name: Monster Lab!
  * -------------------------------------------------
- * Creator's name: John McMeen
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: 1020
  * Creation date: Apr 19, 2020

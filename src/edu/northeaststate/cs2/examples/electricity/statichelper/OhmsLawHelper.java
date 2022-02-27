@@ -1,12 +1,11 @@
 /**
  * -------------------------------------------------
- * File name: OhmsLawDemo.java
- * Project name: CS2 Examples
+ * File name: OhmsLawHelper.java
+ * Project Name: CS2 Examples
  * -------------------------------------------------
- * Creator's name: John McMeen
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: CISP 1020
- * Creation date: Mar 1, 2021
  * -------------------------------------------------
  */
 package edu.northeaststate.cs2.examples.electricity.statichelper;

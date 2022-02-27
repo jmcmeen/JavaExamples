@@ -1,9 +1,9 @@
 /**
  * -------------------------------------------------
  * File name: Monster.java
- * Project name: D&D Encounters
+ * Project Name: D&D Encounters
  * -------------------------------------------------
- * Creator's name: John McMeen
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: 1020
  * Creation date: Apr 20, 2020

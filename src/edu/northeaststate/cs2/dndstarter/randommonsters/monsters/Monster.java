@@ -1,40 +1,27 @@
 /**
  * -------------------------------------------------
  * File name: Monster.java
- * Project name: D&D Encounters
- * -------------------------------------------------
- * Creator's name: John McMeen
+ * Project Name: D&D Encounters
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: 1020
- * Creation date: Apr 5, 2020
  * -------------------------------------------------
  */
 package edu.northeaststate.cs2.dndstarter.randommonsters.monsters;
 
 /**
- * <b>
- * Purpose:
- * - Default constructor and parameterized constructor
- * - Getter methods: getName, getHitPoints
- * - Setter methods: setName, setHitPoints
- * - Public methods: toString, takeDamage
- * </b>
- * <hr>
- * Date created: Apr 5, 2020
- * <hr>
- *
- * @author John McMeen
+ * Class Name: Monster
+ * Purpose: Models a Monster object
  */
 public class Monster {
-    //protected attributes accessible by sub classes
     protected String name;
     protected int hitPoints;
 
     /**
-     * Method description: Parameterized constructor
-     * Date: Apr 5, 2020
-     * Parameters: String name, int hitPoints
-     * Return type: None
+     * Method Name: Monster
+     * Method Description: Parameterized constructor
+     * @param name
+     * @param hitPoints
      */
     public Monster(String name, int hitPoints) {
         this.name = name;
@@ -42,50 +29,45 @@ public class Monster {
     }
 
     /**
-     * Method description: Returns the hitPoints attribute for Monster
-     * Date: Apr 5, 2020
-     * Parameters: None
-     * Return type: int
+     * Method Name: getHitPoints
+     * Method Description: Returns the hitPoints attribute for Monster
+     * @return int
      */
     public int getHitPoints() {
         return this.hitPoints;
     }
 
     /**
-     * Method description: Sets the hitPoints attribute for Monster
-     * Date: Apr 5, 2020
-     * Parameters: int hitPoint
-     * Return type: void
+     * Method Name: setHitPoints
+     * Method Description: Sets the hitPoints attribute for Monster
+     * @param hitPoints
      */
     public void setHitPoints(int hitPoints) {
         this.hitPoints = hitPoints;
     }
 
     /**
-     * Method description: Returns the name attribute for Monster
-     * Date: Apr 5, 2020
-     * Parameters: None
-     * Return type: int
+     * Method Name: getName
+     * Method Description: Returns the name attribute for Monster
+     * @return String
      */
     public String getName() {
         return this.name;
     }
 
     /**
-     * Method description: Sets the name attribute for Monster
-     * Date: Apr 5, 2020
-     * Parameters: String name
-     * Return type: void
+     * Method Name: setName
+     * Method Description: Sets the name attribute for Monster
+     * @param name
      */
     public void setName(String name) {
         this.name = name;
     }
 
     /**
+     * Method Name: toString
      * Method description: Build a string that represents a Monster
-     * Date: Apr 5, 2020
-     * Parameters: None
-     * Return type: String
+     * @return String
      */
     @Override
     public String toString() {

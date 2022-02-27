@@ -1,42 +1,30 @@
 /**
  * -------------------------------------------------
  * File name: Encounter.java
- * Project name: D&D Encounters
- * -------------------------------------------------
- * Creator's name: John McMeen
+ * Project Name: D&D Encounters
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: 1020
- * Creation date: Apr 5, 2020
  * -------------------------------------------------
  */
 package edu.northeaststate.cs2.dndstarter.randommonsters;
 
 import edu.northeaststate.cs2.dndstarter.randommonsters.monsters.Monster;
-
 import java.util.ArrayList;
 
 /**
- * <b>
- * Purpose: Encounter class is composed of a list of Monster objects and a name:
- * - Partial parameterized constructor (creates empty list of Monster objects)
- * - Public methods: addMonster
- * </b>
- * <hr>n
- * Date created: Apr 5, 2020
- * <hr>
- *
- * @author John McMeen
+ * Class Name: Encounter
+ * Purpose: Encounter class is composed of a list of Monster objects and an Encounter's name
  */
 public class Encounter {
     private ArrayList<Monster> monsters;
     private String name;
 
     /**
+     * Method Name: Encounter
      * Method description: Partial parameterized constructor. Sets name attribute and allocates memory for ArrayList of
      * Monster objects
-     * Date: Apr 5, 2020
-     * Parameters: String name
-     * Return type: NA
+     * @param name
      */
     public Encounter(String name) {
         this.name = name;
@@ -44,20 +32,18 @@ public class Encounter {
     }
 
     /**
+     * Method Name: addMonster
      * Method description: Adds a monster reference (shallow) to the monsters ArrayList
-     * Date: Apr 5, 2020
-     * Parameters: Monster monster
-     * Return type: void
+     * @param monster
      */
     public void addMonster(Monster monster) {
         this.monsters.add(monster);
     }
 
     /**
+     * Method Name: toString
      * Method description: Builds a string to represent Encounter
-     * Date: Apr 5, 2020
-     * Parameters: None
-     * Return type: String
+     * @return String
      */
     @Override
     public String toString() {
@@ -76,10 +62,18 @@ public class Encounter {
         return s;
     }
 
+    /**
+     * Method Name: sortMonstersByHitPoints
+     * Method Description: Uses the ArrayList sort method by hit points by passing in the CompareByHitPoint Comparator
+     */
     public void sortMonstersByHitPoints() {
         this.monsters.sort(new CompareByHitPoints());
     }
 
+    /**
+     * Method Name: sortMonstersByName
+     * Method Description: Uses the ArrayList sort method by hit points by passing in the CompareByName Comparator
+     */
     public void sortMonstersByName() {
         this.monsters.sort(new CompareByName());
     }

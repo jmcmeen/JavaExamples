@@ -1,9 +1,9 @@
 /**
  * -------------------------------------------------
  * File name: CompareByName.java
- * Project name: Monster Lab!
+ * Project Name: Monster Lab!
  * -------------------------------------------------
- * Creator's name: John McMeen
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course: CISP 1020
  * Creation date: Apr 19, 2020

@@ -1,43 +1,30 @@
 /**
- * -------------------------------------------------
+ * ------------------------------------------
  * File name: Orc.java
- * Project name: Random Encounters
- * -------------------------------------------------
- * Creator's name: John McMeen
+ * Project Name: D&D Encounters
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: 1020
- * Creation date: Apr 5, 2020
- * -------------------------------------------------
+ * ------------------------------------------
  */
 package edu.northeaststate.cs2.dndstarter.randommonsters.monsters;
 
 import edu.northeaststate.cs2.dndstarter.util.SimpleDiceRoller;
 
 /**
- * <b>
- * Purpose: Orc extends Monster and describes a special case of Monster.
- * See monsters for inherited methods and attributes.
- * - Default constructor and parameterized constructor
- * - Public methods: toString
- * </b>
- * <hr>
- * Date created: Apr 5, 2020
- * <hr>
- *
- * @author John McMeen
+ * Class Name: Orc
+ * Purpose: Orc extends Monster and describes a specialization of Monster.
  */
 public class Orc extends Monster {
-    private static int numOrcs = 1;
+    private static int numOrcs = 0;
     private static final int ORC_MAX_HP = 22;
 
     /**
+     * Method Name: Orc
      * Method description: No argument constructor, creates a name using using string literal "Orc " and appends the numOrcs
      * static attribute. Also uses SimpleDiceRoller to generate a number between 1 and ORC_MAX_HP.
      * Calls parent constructor using super(). Increments the static variable numOrcs to count
      * total number of Orcs created.
-     * Date: Apr 5, 2020
-     * Parameters: String name
-     * Return type: NA
      */
     public Orc() {
         super("Orc " + numOrcs, SimpleDiceRoller.roll(ORC_MAX_HP));
@@ -45,28 +32,33 @@ public class Orc extends Monster {
     }
 
     /**
+     * Method Name: Orc
      * Method description: Parameterized constructor, takes a String name input and uses SimpleDiceRoller to generate
      * a number between 1 and ORC_MAX_HP. Calls parent constructor using super(). Increments
      * the static variable numOrcs to count total number of Orcs created
-     * Date: Apr 5, 2020
-     * Parameters: String name
-     * Return type: NA
+     * @param name
      */
     public Orc(String name) {
         super(name, SimpleDiceRoller.roll(ORC_MAX_HP));
         numOrcs += 1;
     }
 
+    /**
+     * Method Name: Orc
+     * Method description: Parameterized constructor, takes a String name and int hitPoints. Calls parent constructor
+     * using super(). Increments the static variable numOrcs to count total number of Orcs created
+     * @param name
+     * @param hitPoints
+     */
     public Orc(String name, int hitPoints){
         super(name, hitPoints);
         numOrcs++;
     }
 
     /**
-     * Method description: Build a string that represents an Orc
-     * Date: Apr 5, 2020
-     * Parameters: none
-     * Return type: String
+     * Method Name: toString
+     * Method Description: Build a string that represents an Orc
+     * @return String
      */
     @Override
     public String toString() {

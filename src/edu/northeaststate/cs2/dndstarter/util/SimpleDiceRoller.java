@@ -1,9 +1,9 @@
 /**
  * -------------------------------------------------
  * File name: SimpleDiceRoller.java
- * Project name: DnD Utilities
+ * Project Name: DnD Utilities
  * -------------------------------------------------
- * Creator's name: John McMeen
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Creation date: Apr 5, 2020
  * -------------------------------------------------

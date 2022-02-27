@@ -1,7 +1,7 @@
 /**
  * -------------------------------------------------
  * File name: RandomNumbers.java
- * Project name: CS1 Examples
+ * Project Name: CS1 Examples
  * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course & Section: CISP 1010

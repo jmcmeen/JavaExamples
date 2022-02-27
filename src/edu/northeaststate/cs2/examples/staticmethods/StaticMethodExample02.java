@@ -1,8 +1,8 @@
 /**
  * -------------------------------------------------
  * File name: StaticMethodExample02.java
- * Project name: CS2 Examples
- * Creator's name: John McMeen
+ * Project Name: CS2 Examples
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: CISP 1020
  * -------------------------------------------------

@@ -1,9 +1,9 @@
 /**
  * -------------------------------------------------
  * File name: MonsterGenerator.java
- * Project name: Random Encounters
+ * Project Name: Random Encounters
  * -------------------------------------------------
- * Creator's name: John McMeen
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: CISP 1020
  * Creation date: Apr 5, 2020

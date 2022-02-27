@@ -1,9 +1,9 @@
 /**
  * -------------------------------------------------
  * File name: ConsoleHelper.java
- * Project name: DnD Utilities
+ * Project Name: DnD Utilities
  * -------------------------------------------------
- * Creator's name: John McMeen
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: CISP 1020
  * Creation date: Apr 5, 2020

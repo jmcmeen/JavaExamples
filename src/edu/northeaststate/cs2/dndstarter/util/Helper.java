@@ -1,9 +1,9 @@
 /**
  * -------------------------------------------------
  * File name: Helper.java
- * Project name: Validation Library
+ * Project Name: Validation Library
  * -------------------------------------------------
- * Creator's name: John McMeen
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Creation date: Mar 24, 2020
  * -------------------------------------------------

@@ -1,9 +1,9 @@
 /**
  * -------------------------------------------------
  * File name: Item.java
- * Project name: CS2 Examples
+ * Project Name: CS2 Examples
  * -------------------------------------------------
- * Creator's name: John McMeen
+ * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * -------------------------------------------------
  */
