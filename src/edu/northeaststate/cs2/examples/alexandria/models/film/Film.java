@@ -1,10 +1,10 @@
 package edu.northeaststate.cs2.examples.alexandria.models.film;
 
-import edu.northeaststate.cs2.examples.alexandria.models.Item;
+import edu.northeaststate.cs2.examples.alexandria.models.LibraryItem;
 
 import java.io.Serializable;
 
-public class Film extends Item implements Serializable, Cloneable{
+public class Film extends LibraryItem implements Serializable, Cloneable{
     protected String director;
 
     public Film(String ID, String title, String year, String director) {

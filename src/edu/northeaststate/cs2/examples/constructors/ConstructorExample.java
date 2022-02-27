@@ -4,19 +4,22 @@
  * Project Name: CS2 Examples
  * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
+ * Course and section: CISP 1020
  * -------------------------------------------------
  */
 package edu.northeaststate.cs2.examples.constructors;
 
-import edu.northeaststate.cs2.examples.models.Monster;
+import edu.northeaststate.cs2.examples.commonmodels.Monster;
 
 /**
- * Demonstrate creating objects from Monster class
+ * Class Name: ConstructorExample
+ * Purpose: Demonstrates creating objects from Monster class using various constructor methods
  */
 public class ConstructorExample {
     /**
-     * Entry point for application
-     * @param args
+     * Method Name: main
+     * Method Description: Entry point for the application
+     * @param args command line arguments
      */
     public static void main(String[] args) {
         //Monster reference

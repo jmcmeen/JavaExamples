@@ -10,13 +10,15 @@
 package edu.northeaststate.cs2.examples.electricity.objectoriented;
 
 /**
- * Models voltage in volts calculated from Ohm's Law
+ * Class Name: Volt
+ * Purpose: Models voltage in volts calculated from Ohm's Law
  */
 public class Volt {
     private double amps, ohms;
 
     /**
-     * Parameterized constructor
+     * Method Name: Volt
+     * Method Description: Parameterized constructor
      * @param amps current in amps
      * @param ohms resistance in ohms
      */
@@ -26,8 +28,9 @@ public class Volt {
     }
 
     /**
-     * Calculates voltage using Ohm's Law
-     * @return calculated volts
+     * Method Name: getValue
+     * Method Description: Calculates voltage using Ohm's Law
+     * @return double
      */
     public double getValue(){
         return amps * ohms;

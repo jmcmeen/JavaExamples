@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Library implements Serializable {
     private String name;
-    private ArrayList<Item> items;
+    private ArrayList<LibraryItem> items;
 
     public Library(String name) {
         this.name = name;
@@ -20,20 +20,20 @@ public class Library implements Serializable {
         this.name = name;
     }
 
-    public ArrayList<Item> getItems() {
+    public ArrayList<LibraryItem> getItems() {
         return items;
     }
 
-    public void setItems(ArrayList<Item> newItems) {
-        this.items = (ArrayList<Item>)newItems.clone();
+    public void setItems(ArrayList<LibraryItem> newItems) {
+        this.items = (ArrayList<LibraryItem>)newItems.clone();
     }
 
     public int calculateTotalItems() {
         return this.items.size();
     }
 
-    public void addItem(Item item) throws CloneNotSupportedException {
-        this.items.add( (Item)item.clone() );
+    public void addItem(LibraryItem item) throws CloneNotSupportedException {
+        this.items.add( (LibraryItem)item.clone() );
     }
 
     @Override
@@ -47,7 +47,7 @@ public class Library implements Serializable {
         sb.append(this.calculateTotalItems());
         sb.append("\n");
 
-        for (Item i : this.items) {
+        for (LibraryItem i : this.items) {
             sb.append(i.toString());
             sb.append("\n");
         }

@@ -1,6 +1,6 @@
 package edu.northeaststate.cs2.examples.alexandria.ui.menu.commands.mainmenu;
 
-import edu.northeaststate.cs2.examples.alexandria.models.Item;
+import edu.northeaststate.cs2.examples.alexandria.models.LibraryItem;
 import edu.northeaststate.cs2.examples.alexandria.models.Library;
 import edu.northeaststate.cs2.examples.alexandria.ui.menu.commands.MenuCommand;
 
@@ -13,7 +13,7 @@ public class ShowAllItems implements MenuCommand {
 
     @Override
     public void execute() {
-        for (Item i : library.getItems()) {
+        for (LibraryItem i : library.getItems()) {
             System.out.println(i.toString());
         }
     }

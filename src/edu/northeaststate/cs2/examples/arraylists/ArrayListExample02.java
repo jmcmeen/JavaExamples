@@ -1,33 +1,26 @@
 /**
  * -------------------------------------------------
- * File name: ArrayListExample01.java
+ * File name: ArrayListExample02.java
  * Project Name: CS2 Examples
- * -------------------------------------------------
  * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: CISP 1020
- * Creation date: Feb 2, 2021
  * -------------------------------------------------
  */
 package edu.northeaststate.cs2.examples.arraylists;
 
-import edu.northeaststate.cs2.examples.models.Monster;
-
+import edu.northeaststate.cs2.examples.commonmodels.Monster;
 import java.util.ArrayList;
 
 /**
- * <b>Purpose: Demonstrates ArrayList functionality with Monster objects
- * - Public methods: main
- * </b>
- * <hr>
- * Date created: Feb 2, 2021
- * <hr>
- * @author John McMeen
+ * Class Name: ArrayListExample02
+ * Purpose: Demonstrates ArrayList functionality with Monster objects
  */
 public class ArrayListExample02 {
     /**
-     * Entry point for application
-     * @param args
+     * Method Name: main
+     * Method Description: Entry point for the application
+     * @param args command line arguments
      */
     public static void main(String[] args) {
         //Declare an ArrayList for type Monster
@@ -69,7 +62,7 @@ public class ArrayListExample02 {
         //Also add up all hit points
         int totalHp = 0;
 
-        //The for each loop let's you construct a for loop  using an alias for each of the Monsters in the ArrayList
+        //The for each loop lets you construct a for loop  using an alias for each of the Monsters in the ArrayList
         //Here we use "mo" because m is already used above. You can name the alias whatever you would like
         for (Monster currentMonster : monsters) {
             System.out.println(currentMonster.toString());

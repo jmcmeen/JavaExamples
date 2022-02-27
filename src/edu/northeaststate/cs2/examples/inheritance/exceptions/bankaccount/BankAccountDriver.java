@@ -10,7 +10,16 @@
 
 package edu.northeaststate.cs2.examples.inheritance.exceptions.bankaccount;
 
-public class BankExample {
+/**
+ * Class Name: BankAccountDriver
+ * Purpose: Demonstrates the use of the BankAccount object and custom Exception classes
+ */
+public class BankAccountDriver {
+    /**
+     * Method Name: main
+     * Method Description: Entry point for the application
+     * @param args command line arguments
+     */
     public static void main(String[] args) {
         System.out.println("Dollar Bank Online");
         BankAccount account = new BankAccount();

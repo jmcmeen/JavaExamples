@@ -7,7 +7,7 @@
  * Course and section: 1020
  * -------------------------------------------------
  */
-package edu.northeaststate.cs2.examples.models;
+package edu.northeaststate.cs2.examples.commonmodels;
 
 import java.util.Objects;
 

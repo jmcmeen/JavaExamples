@@ -1,6 +1,6 @@
 package edu.northeaststate.cs2.examples.alexandria.ui.menu.commands.mainmenu;
 
-import edu.northeaststate.cs2.examples.alexandria.models.Item;
+import edu.northeaststate.cs2.examples.alexandria.models.LibraryItem;
 import edu.northeaststate.cs2.examples.alexandria.models.Library;
 import edu.northeaststate.cs2.examples.alexandria.models.book.Book;
 import edu.northeaststate.cs2.examples.alexandria.models.film.BluRay;
@@ -25,14 +25,14 @@ public class SearchLibrary implements MenuCommand {
     @Override
     public void execute() {
         Scanner keyboard = new Scanner(System.in);
-        ArrayList<Item> searchResults = new ArrayList<>();
+        ArrayList<LibraryItem> searchResults = new ArrayList<>();
 
         String searchTerm;
 
         System.out.print("Enter search term:");
         searchTerm = keyboard.nextLine();
 
-        for(Item item: library.getItems()){
+        for(LibraryItem item: library.getItems()){
             //Search item terms
             if(item.getTitle().toLowerCase().contains(searchTerm.toLowerCase()) ||
                item.getYear().toLowerCase().contains(searchTerm.toLowerCase())){
@@ -88,7 +88,7 @@ public class SearchLibrary implements MenuCommand {
         if(searchResults.size() == 0){
             System.out.println("No Results");
         }else{
-            for(Item i: searchResults){
+            for(LibraryItem i: searchResults){
                 System.out.println(i.toString());
             }
         }

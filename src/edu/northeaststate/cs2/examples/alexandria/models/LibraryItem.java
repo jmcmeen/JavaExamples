@@ -2,12 +2,12 @@ package edu.northeaststate.cs2.examples.alexandria.models;
 
 import java.io.Serializable;
 
-public abstract class Item implements Serializable, Cloneable {
+public abstract class LibraryItem implements Serializable, Cloneable {
     protected String ID;
     protected String title;
     protected String year;
 
-    public Item(String ID, String title, String year) {
+    public LibraryItem(String ID, String title, String year) {
         this.ID = ID;
         this.title = title;
         this.year = year;

@@ -2,11 +2,9 @@
  * -------------------------------------------------
  * File name: ArrayListExample01.java
  * Project Name: CS2 Examples
- * -------------------------------------------------
  * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: CISP 1020
- * Creation date: Feb 2, 2021
  * -------------------------------------------------
  */
 package edu.northeaststate.cs2.examples.arraylists;
@@ -14,12 +12,14 @@ package edu.northeaststate.cs2.examples.arraylists;
 import java.util.ArrayList;
 
 /**
- * Demonstrates ArrayList functionality with Strings
+ * Class Name: ArrayListExample01
+ * Purpose: Demonstrates ArrayList functionality with Strings
  */
 public class ArrayListExample01 {
     /**
-     * Entry point for application
-     * @param args
+     * Method Name: main
+     * Method Description: Entry point for the application
+     * @param args command line arguments
      */
     public static void main(String[] args) {
         //create ArrayList of template type String

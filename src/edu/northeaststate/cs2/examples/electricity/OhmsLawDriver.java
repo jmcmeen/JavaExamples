@@ -19,11 +19,14 @@ import edu.northeaststate.cs2.examples.electricity.objectoriented.Volt;
 import edu.northeaststate.cs2.examples.electricity.statichelper.OhmsLawHelper;
 
 /**
- * Application to demonstrate Ohm's Law calculations using two different paradigms, Object-Oriented and Static Helper Classes
+ * Class Name: OhmsLawDriver
+ * Purpose: Application to demonstrate Ohm's Law calculations using two different paradigms, Object-Oriented
+ * and Static Helper Classes
  */
 public class OhmsLawDriver {
     /**
-     * Entry point for the application
+     * Method Name: main
+     * Method Description: Entry point for the application
      * @param args command line arguments
      */
     public static void main(String[] args) {

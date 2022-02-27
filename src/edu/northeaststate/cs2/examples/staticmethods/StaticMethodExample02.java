@@ -10,7 +10,7 @@
 package edu.northeaststate.cs2.examples.staticmethods;
 
 import java.util.Scanner;
-import edu.northeaststate.cs2.dndstarter.util.Helper;
+import edu.northeaststate.cs2.dndstarter.util.InputValidation;
 
 /**
  * An application that demonstrates static methods
@@ -30,14 +30,14 @@ public class StaticMethodExample02 {
         //Just use the name of the class and the method you want to call
         System.out.print("Enter a positive integer: ");
         tempInput = keyboard.nextLine();
-        parsedInteger = Helper.isPositiveInteger(tempInput);
+        parsedInteger = InputValidation.isPositiveInteger(tempInput);
 
         //while the parsed integer is not positive, keep getting input
         while (parsedInteger == -1) {
             System.out.println(tempInput + " is not a positive integer.");
             System.out.print("Enter a positive integer: ");
             tempInput = keyboard.nextLine();
-            parsedInteger = Helper.isPositiveInteger(tempInput);
+            parsedInteger = InputValidation.isPositiveInteger(tempInput);
         }
 
         System.out.println(parsedInteger + " is a positive integer.");
@@ -45,14 +45,14 @@ public class StaticMethodExample02 {
 
         System.out.print("Enter a positive double: ");
         tempInput = keyboard.nextLine();
-        parsedDouble = Helper.isPositiveDouble(tempInput);
+        parsedDouble = InputValidation.isPositiveDouble(tempInput);
 
         //while the parsed double is not positive, keep getting input
         while (parsedDouble == -1) {
             System.out.println(tempInput + " is not a positive double.");
             System.out.print("Enter a positive double: ");
             tempInput = keyboard.nextLine();
-            parsedDouble = Helper.isPositiveDouble(tempInput);
+            parsedDouble = InputValidation.isPositiveDouble(tempInput);
         }
 
         System.out.println(parsedDouble + " is a positive double.");

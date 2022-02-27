@@ -11,7 +11,7 @@
  */
 package edu.northeaststate.cs2.examples.tostring;
 
-import edu.northeaststate.cs2.examples.models.Item;
+import edu.northeaststate.cs2.examples.commonmodels.Item;
 
 import java.util.ArrayList;
 /**

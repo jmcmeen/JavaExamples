@@ -10,13 +10,15 @@
 package edu.northeaststate.cs2.examples.electricity.objectoriented;
 
 /**
- * Models resistance in Ohms calculated from Ohm's Law
+ * Class Name: Ohm
+ * Purpose: Models resistance in Ohms calculated from Ohm's Law
  */
 public class Ohm {
     private double amps, volts;
 
     /**
-     * Parameterized constructor
+     * Method Name: Ohm
+     * Method Description: Parameterized constructor
      * @param amps current in amps
      * @param volts voltage in volts
      */
@@ -26,8 +28,9 @@ public class Ohm {
     }
 
     /**
-     * Calculates resistance in Ohms using Ohm's Law
-     * @return calculated Ohms
+     * Method Name: getValue
+     * Method Description: Calculates resistance in Ohms using Ohm's Law
+     * @return double
      */
     public double getValue(){
         return volts /amps;

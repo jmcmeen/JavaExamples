@@ -11,7 +11,7 @@
  */
 package edu.northeaststate.cs2.examples.referencetypes;
 
-import edu.northeaststate.cs2.examples.models.Monster;
+import edu.northeaststate.cs2.examples.commonmodels.Monster;
 
 /**
  * An application that demonstrates reference types

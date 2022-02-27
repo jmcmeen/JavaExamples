@@ -7,9 +7,21 @@
  * Course & Section: CISP 1020
  * -------------------------------------------------
  */
+
 package edu.northeaststate.cs2.examples.inheritance.exceptions.backpack;
 
+import edu.northeaststate.cs2.examples.commonmodels.Item;
+
+/**
+ * Class Name: BackpackDriver01
+ * Purpose: Demonstrates unhandled exception causeing program to stop execution
+ */
 public class BackpackDriver01 {
+    /**
+     * Method Name: main
+     * Method Description: Entry point for the application
+     * @param args command line arguments
+     */
     public static void main(String[] args) throws ContainerFullException {
         Backpack backpack = new Backpack(2);
 

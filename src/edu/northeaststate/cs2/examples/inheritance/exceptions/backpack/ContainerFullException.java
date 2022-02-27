@@ -9,8 +9,16 @@
  */
 package edu.northeaststate.cs2.examples.inheritance.exceptions.backpack;
 
+/**
+ * Class Name: ContainerFullException
+ * Purpose: Custom extended Exception class to be thrown when a container is full
+ */
 public class ContainerFullException extends Exception {
+    /**
+     * Method Name: ContainerFullException
+     * Method Description: Default constructor, calls super class constructor and passes in an Exception message
+     */
     public ContainerFullException() {
-        super("This container is full.");
+        super("This container is full!");
     }
 }

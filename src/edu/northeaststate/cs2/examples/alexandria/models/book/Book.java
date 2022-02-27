@@ -1,10 +1,10 @@
 package edu.northeaststate.cs2.examples.alexandria.models.book;
 
-import edu.northeaststate.cs2.examples.alexandria.models.Item;
+import edu.northeaststate.cs2.examples.alexandria.models.LibraryItem;
 
 import java.io.Serializable;
 
-public class Book extends Item implements Serializable, Cloneable{
+public class Book extends LibraryItem implements Serializable, Cloneable{
     protected String author;
     protected String ISBN;
 

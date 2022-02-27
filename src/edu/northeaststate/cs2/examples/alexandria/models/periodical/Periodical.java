@@ -1,10 +1,10 @@
 package edu.northeaststate.cs2.examples.alexandria.models.periodical;
 
-import edu.northeaststate.cs2.examples.alexandria.models.Item;
+import edu.northeaststate.cs2.examples.alexandria.models.LibraryItem;
 
 import java.io.Serializable;
 
-public class Periodical extends Item implements Serializable, Cloneable {
+public class Periodical extends LibraryItem implements Serializable, Cloneable {
     protected String volumeNumber;
 
     public Periodical(String ID, String title, String year, String volumeNumber) {

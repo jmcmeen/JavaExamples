@@ -2,38 +2,28 @@
  * -------------------------------------------------
  * File name: RandomEncounterDriver.java
  * Project Name: Random Encounters
- * -------------------------------------------------
  * Created By: John McMeen
  * Email: jnmcmeen@northeaststate.edu
  * Course and section: CISP 1020
- * Creation date: Apr 5, 2020
  * -------------------------------------------------
  */
 package edu.northeaststate.cs2.dndstarter.randommonsters;
 
 import edu.northeaststate.cs2.dndstarter.util.ConsoleHelper;
-
 import java.util.ArrayList;
 import java.util.Random;
 
 /**
- * <b>
- * Purpose:
- * - Public methods: main
- * </b>
- * <hr>
- * Date created: Apr 05, 2016
- * <hr>
- *
- * @author John McMeen
+ * Class Name: RandomEncounterDriver
+ * Purpose: An application that will generate randomly filled Monster Encounters
  */
 public class RandomEncounterDriver {
     /**
-     * Method description: Uses MonsterGenerator.getRandomMonster to build a specified number of Encounter objects
-     * and fill them with random monsters of various extended types. Orc and Troll are provided.
-     * Date: Apr 05, 2016
-     * Parameters: String[] args (unused)
-     * Return type: void
+     * Method Name: main
+     * Method Description: Entry point for the application. Uses MonsterGenerator.getRandomMonster to build a specified
+     * number of Encounter objects and fill them with random monsters of various extended types. Orc and Troll are
+     * provided.
+     * @param args command line arguments
      */
     public static void main(String[] args) {
         //some constant variables to drive the random monster simulation
