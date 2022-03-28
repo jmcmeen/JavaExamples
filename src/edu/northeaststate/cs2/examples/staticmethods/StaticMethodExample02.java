@@ -17,7 +17,7 @@ import edu.northeaststate.cs2.dndstarter.util.InputValidation;
  */
 public class StaticMethodExample02 {
     /**
-     * Method description: Main method for application
+     * Method Description: Main method for application
      */
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);

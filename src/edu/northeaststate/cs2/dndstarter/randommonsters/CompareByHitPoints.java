@@ -18,6 +18,7 @@ import java.util.Comparator;
  * Purpose: Implements a Comparator interface to compare two monsters by name
  */
 public class CompareByHitPoints implements Comparator<Monster> {
+
     /**
      * Method Name: compare
      * Method Description: Implements the Comparator interface method, compare. Subtracts second Monster's hit points

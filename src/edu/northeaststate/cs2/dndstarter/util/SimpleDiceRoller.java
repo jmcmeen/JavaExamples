@@ -18,7 +18,7 @@ import java.util.Random;
 public class SimpleDiceRoller {
     /**
      * Method Name: roll
-     * Method description: Takes an integer for number of side of "dice." Uses Random class to generate a
+     * Method Description: Takes an integer for number of side of "dice." Uses Random class to generate a
      * number between 1 and numSides.
      * @param numSides
      * @return int

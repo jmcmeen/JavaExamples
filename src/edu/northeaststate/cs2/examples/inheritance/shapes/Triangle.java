@@ -30,7 +30,7 @@ public class Triangle extends Shape{
     }
 
     /**
-      Calculates the area of the triangle
+     Calculates the area of the triangle
      * @return calculated area
      */
     @Override

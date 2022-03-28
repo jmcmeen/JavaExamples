@@ -7,6 +7,9 @@
  * -------------------------------------------------
  */
 package edu.northeaststate.cs2.examples.commonmodels;
+
+import java.util.Objects;
+
 /**
  * Models a role playing game Item
  */
@@ -34,7 +37,7 @@ public class Item{
      * Returns the name attribute for Item
      */
     public String getName() {
-        return name;
+        return this.name;
     }
 
     /**
@@ -50,7 +53,7 @@ public class Item{
      * @return
      */
     public double getValue() {
-        return value;
+        return this.value;
     }
 
 
@@ -72,5 +75,27 @@ public class Item{
                 "name='" + name + '\'' +
                 ", value=" + value +
                 '}';
+    }
+    @Override
+    public boolean equals(Object o) {
+        //self check
+        if (this == o) {
+            return true;
+        }
+        //null check and type check
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+
+        //The object's references are of the same type, cast Object o to Item
+        Item item = (Item) o;
+
+        return Double.compare(item.value, value) == 0 &&
+                name.equals(item.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.name, this.value);
     }
 }

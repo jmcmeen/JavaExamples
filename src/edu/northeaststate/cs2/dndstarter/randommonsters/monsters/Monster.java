@@ -66,7 +66,7 @@ public class Monster {
 
     /**
      * Method Name: toString
-     * Method description: Build a string that represents a Monster
+     * Method Description: Build a string that represents a Monster
      * @return String
      */
     @Override

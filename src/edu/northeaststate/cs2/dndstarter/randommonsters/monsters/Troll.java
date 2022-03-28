@@ -21,7 +21,7 @@ public class Troll extends Monster {
 
     /**
      * Method Name: Troll
-     * Method description: Default constructor, creates a name using using string literal "Troll " and appends the numTrolls
+     * Method Description: Default constructor, creates a name using using string literal "Troll " and appends the numTrolls
      * static attribute. Also uses SimpleDiceRoller to generate a number between 1 and TROLL_MAX_HP.
      * Calls parent constructor using super(). Increments the static variable numTrolls to count
      * total number of Trolls created.
@@ -33,7 +33,7 @@ public class Troll extends Monster {
 
     /**
      * Method Name: Troll
-     * Method description: Parameterized constructor, takes a String name input and uses SimpleDiceRoller to generate
+     * Method Description: Parameterized constructor, takes a String name input and uses SimpleDiceRoller to generate
      * a number between 1 and TROLL_MAX_HP. Calls parent constructor using super(). Increments
      * the static variable numTrolls to count total number of Trolls created
      * @param name
@@ -45,7 +45,7 @@ public class Troll extends Monster {
 
     /**
      * Method Name: Troll
-     * Method description: Parameterized constructor, takes a String name and int hitPoints. Calls parent constructor
+     * Method Description: Parameterized constructor, takes a String name and int hitPoints. Calls parent constructor
      * using super(). Increments the static variable numTrolls to count total number of Trolls created
      * @param name
      * @param hitPoints
@@ -57,7 +57,7 @@ public class Troll extends Monster {
 
     /**
      * Method Name: toString
-     * Method description: Build a string that represents a Troll
+     * Method Description: Build a string that represents a Troll
      * @return String
      */
     @Override

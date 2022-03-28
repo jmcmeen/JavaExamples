@@ -29,12 +29,8 @@ import java.util.Random;
  * @author John McMeen
  */
 public class MonsterGenerator {
-    private MonsterGenerator(){
-
-    }
-
     /**
-     * Method description: Returns a random extended Monster object.
+     * Method Description: Returns a random extended Monster object.
      * Extended Monsters currently supported:
      * -Orc
      * -Troll

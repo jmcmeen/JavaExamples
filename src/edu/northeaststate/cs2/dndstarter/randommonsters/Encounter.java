@@ -22,7 +22,7 @@ public class Encounter {
 
     /**
      * Method Name: Encounter
-     * Method description: Partial parameterized constructor. Sets name attribute and allocates memory for ArrayList of
+     * Method Description: Partial parameterized constructor. Sets name attribute and allocates memory for ArrayList of
      * Monster objects
      * @param name
      */
@@ -33,7 +33,7 @@ public class Encounter {
 
     /**
      * Method Name: addMonster
-     * Method description: Adds a monster reference (shallow) to the monsters ArrayList
+     * Method Description: Adds a monster reference (shallow) to the monsters ArrayList
      * @param monster
      */
     public void addMonster(Monster monster) {
@@ -42,7 +42,7 @@ public class Encounter {
 
     /**
      * Method Name: toString
-     * Method description: Builds a string to represent Encounter
+     * Method Description: Builds a string to represent Encounter
      * @return String
      */
     @Override
@@ -67,6 +67,8 @@ public class Encounter {
      * Method Description: Uses the ArrayList sort method by hit points by passing in the CompareByHitPoint Comparator
      */
     public void sortMonstersByHitPoints() {
+
+
         this.monsters.sort(new CompareByHitPoints());
     }
 

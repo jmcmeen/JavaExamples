@@ -11,7 +11,8 @@
  */
 package edu.northeaststate.cs2.examples;
 
-import java.math.BigDecimal;
+import edu.northeaststate.cs2.examples.commonmodels.Item;
+
 import java.util.Objects;
 
 /**
@@ -23,19 +24,47 @@ public class WeirdScience{
      * @param args
      */
     public static void main(String[] args) {
-        System.out.println("Weird Science!");
-        String s = "hello world";
-        String t = "Y";
+        for(int i = 0 ; i < 1000000000; i++){
+            System.out.println(i);
+        }
 
-        t.equals(s);
 
-        Frankenstein frankie;
 
-        frankie = new Frankenstein(37);
+//        System.out.println("Weird Science!");
+//
+//        Item a = new Item("Wand of Doom", 500);
+//        Item b = a;
+//        Item e= null;
+//        String f = "somestring";
+//        Item d = new Item("Staff of Impurity", 600);
+//        Item c = new Item("Wand of Doom", 500);
+//
+////        if(a.equals(c)){
+////            System.out.println("These are equal");
+////        }else{
+////            System.out.println("These are not equal");
+////        }
+//
+//        int hash1 = Objects.hash(2,4,25);
+//        int hash2 = Objects.hash(2);
+//
+//        System.out.println(hash1);
+//        System.out.println(hash2);
+//
+//
+//        System.out.println(a + "   " + a.hashCode());
+//        System.out.println(d + "   " + d.hashCode());
+//        System.out.println(c + "   " + c.hashCode());
+//
+//
 
-        Object obj = new Object();
+//
+//        Frankenstein frankie;
+//
+//        frankie = new Frankenstein(37);
+//
+//        Object obj = new Object();
 
-        println("John");
     }
 
     public static void pageFeed(){

@@ -35,7 +35,7 @@ public class Monster {
     }
 
     /**
-     * Method description: Returns the hitPoints attribute for Monster
+     * Method Description: Returns the hitPoints attribute for Monster
      * Date: Apr 5, 2020
      * Parameters: None
      * @return int
@@ -45,7 +45,7 @@ public class Monster {
     }
 
     /**
-     * Method description: Sets the hitPoints attribute for Monster
+     * Method Description: Sets the hitPoints attribute for Monster
      * Date: Apr 5, 2020
      * Parameters: int hitPoint
      * @return void
@@ -55,7 +55,7 @@ public class Monster {
     }
 
     /**
-     * Method description: Returns the name attribute for Monster
+     * Method Description: Returns the name attribute for Monster
      * Date: Apr 5, 2020
      * Parameters: None
      * @return String
@@ -65,7 +65,7 @@ public class Monster {
     }
 
     /**
-     * Method description: Sets the name attribute for Monster
+     * Method Description: Sets the name attribute for Monster
      * Parameters: String name
      * @return void
      */
@@ -74,7 +74,7 @@ public class Monster {
     }
 
     /**
-     * Method description: Subtracts an amount of damage from Monster's hit points
+     * Method Description: Subtracts an amount of damage from Monster's hit points
      * Parameters: int damage
      * @return void
      */
@@ -83,7 +83,7 @@ public class Monster {
     }
 
     /**
-     * Method description: Build a string that represents a Monster
+     * Method Description: Build a string that represents a Monster
      * Parameters: None
      * @return String
      */
@@ -96,7 +96,7 @@ public class Monster {
     }
 
     /**
-     * Method description: Compares two monsters
+     * Method Description: Compares two monsters
      * Parameters: None
      * @return String
      */
@@ -109,7 +109,7 @@ public class Monster {
     }
 
     /**
-     * Method description: Generates a hash code for Monster
+     * Method Description: Generates a hash code for Monster
      * Parameters: None
      * @return String
      */

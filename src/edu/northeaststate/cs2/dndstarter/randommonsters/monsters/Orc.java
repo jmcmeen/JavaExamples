@@ -21,7 +21,7 @@ public class Orc extends Monster {
 
     /**
      * Method Name: Orc
-     * Method description: No argument constructor, creates a name using using string literal "Orc " and appends the numOrcs
+     * Method Description: No argument constructor, creates a name using using string literal "Orc " and appends the numOrcs
      * static attribute. Also uses SimpleDiceRoller to generate a number between 1 and ORC_MAX_HP.
      * Calls parent constructor using super(). Increments the static variable numOrcs to count
      * total number of Orcs created.
@@ -33,7 +33,7 @@ public class Orc extends Monster {
 
     /**
      * Method Name: Orc
-     * Method description: Parameterized constructor, takes a String name input and uses SimpleDiceRoller to generate
+     * Method Description: Parameterized constructor, takes a String name input and uses SimpleDiceRoller to generate
      * a number between 1 and ORC_MAX_HP. Calls parent constructor using super(). Increments
      * the static variable numOrcs to count total number of Orcs created
      * @param name
@@ -45,7 +45,7 @@ public class Orc extends Monster {
 
     /**
      * Method Name: Orc
-     * Method description: Parameterized constructor, takes a String name and int hitPoints. Calls parent constructor
+     * Method Description: Parameterized constructor, takes a String name and int hitPoints. Calls parent constructor
      * using super(). Increments the static variable numOrcs to count total number of Orcs created
      * @param name
      * @param hitPoints
