@@ -7,7 +7,7 @@ public class Hour implements Incrementable{
     public int increment() {
         if(this.value == 23){
             this.value = 0;
-            return 1; //return the number of hours to increment
+            return 1; //return the number of days to increment
         }else{
             this.value++;
             return 0;

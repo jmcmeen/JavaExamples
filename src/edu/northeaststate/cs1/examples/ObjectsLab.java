@@ -9,8 +9,6 @@
  */
 package edu.northeaststate.cs1.examples;
 
-import edu.northeaststate.cs1.labs.lab15.RegularPolygon;
-
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Random;
@@ -37,7 +35,7 @@ public class ObjectsLab {
         sb.append("Hello");
         sb.append(" ");
         sb.append("World");
-        System.out.println(sb.toString());
+        System.out.println(sb);
         System.out.println(sb);
 
         //Demonstrate ArrayList

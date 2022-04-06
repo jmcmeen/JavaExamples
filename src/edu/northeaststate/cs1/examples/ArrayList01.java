@@ -1,7 +1,5 @@
 package edu.northeaststate.cs1.examples;
 
-import edu.northeaststate.cs1.labs.lab15.RegularPolygon;
-
 import java.util.ArrayList;
 import java.util.Random;
 

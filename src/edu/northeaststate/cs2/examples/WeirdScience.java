@@ -24,10 +24,18 @@ public class WeirdScience{
      * @param args
      */
     public static void main(String[] args) {
-        for(int i = 0 ; i < 1000000000; i++){
+/*        for(int i = 0 ; i < 1000000000; i++){
             System.out.println(i);
-        }
+        }*/
 
+        String s = new String("Hello");
+        String t = new String("Hello");
+
+        if (s == t) {
+            System.out.println("They are equal");
+        }else{
+            System.out.println("They are not equal");
+        }
 
 
 //        System.out.println("Weird Science!");
