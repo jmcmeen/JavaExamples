@@ -30,10 +30,7 @@ public class Dice implements Comparable<Dice>{
         return this.lastRoll;
     }
 
-    @Override
-    public int compareTo(Dice dice) {
-        return Integer.compare(this.lastRoll, dice.lastRoll);
-    }
+
 
     @Override
     public String toString() {
@@ -42,5 +39,10 @@ public class Dice implements Comparable<Dice>{
         sb.append(", lastRoll=").append(lastRoll);
         sb.append('}');
         return sb.toString();
+    }
+
+    @Override
+    public int compareTo(Dice dice) {
+        return Integer.compare(this.lastRoll, dice.lastRoll);
     }
 }
