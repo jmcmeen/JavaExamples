@@ -13,24 +13,15 @@ public class SimpleClockMainGUI extends JFrame {
     private JMenuItem mnuitmAbout = null;
 
     public SimpleClockMainGUI() {
-        setTitle("Simple Clock");
-        setSize(320, 120);
-        setLocationRelativeTo(null);
-        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
-        addWindowListener(new WindowHandler());
+        this.setTitle("Simple Clock");
+        this.setSize(320, 120);
+        this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        this.addWindowListener(new WindowHandler());
 
-        addComponents();
-        createAndAddMenuBar();
-        addMenuOptions();
-        setupMenuEvents();
-    }
-
-    private void addComponents() {
         pnlMain = new MainPanel();
-        add(pnlMain);
-    }
+        this.add(pnlMain);
 
-    private void createAndAddMenuBar() {
         mnubarMain = new JMenuBar();
 
         mnuFile = new JMenu("File");
@@ -42,9 +33,7 @@ public class SimpleClockMainGUI extends JFrame {
         mnubarMain.add(mnuHelp);
 
         setJMenuBar(mnubarMain);
-    }
 
-    private void addMenuOptions() {
         mnuitmExit = new JMenuItem("Exit");
         mnuitmExit.setMnemonic(KeyEvent.VK_X);
         mnuitmExit.setAccelerator(
@@ -54,9 +43,8 @@ public class SimpleClockMainGUI extends JFrame {
         mnuitmAbout = new JMenuItem("About");
         mnuitmAbout.setMnemonic(KeyEvent.VK_B);
         mnuHelp.add(mnuitmAbout);
-    }
 
-    private void setupMenuEvents() {
+        //set up menu events
         mnuitmExit.addActionListener(new ExitHandler());
         mnuitmAbout.addActionListener(new AboutHandler());
     }

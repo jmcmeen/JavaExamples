@@ -7,11 +7,11 @@ import java.util.Random;
 
 public class FileWriterDriver {
     public static void main(String[] args) {
-        Random random = new Random();
+        Random random = new Random(12);
         try {
             File file = new File("out.txt");
             FileWriter fw = new FileWriter(file);
-            for (int i = 0; i <1000; i++) {
+            for (int i = 0; i <10000; i++) {
                 fw.write(random.nextInt(100) + ",");
             }
             fw.close();
