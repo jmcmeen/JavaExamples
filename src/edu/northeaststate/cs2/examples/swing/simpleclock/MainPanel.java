@@ -9,27 +9,18 @@ import java.util.Calendar;
 
 public class MainPanel extends JPanel {
     private static final long serialVersionUID = 1L;
-    private JLabel lblClock = null;
+    private ClockLabel lblClock = null;
     private Timer tmrClock = null;
     private SimpleDateFormat dateFormat =
             new SimpleDateFormat("EEE, d MMM yyyy hh:mm:ss");
 
     public MainPanel() {
-        setBackground(Color.WHITE);
-        addComponents();
-        setupTimer();
-    }
+        this.setBackground(Color.WHITE);
+        this.setLayout(new BorderLayout());
 
-    public void addComponents() {
-        setLayout(new BorderLayout());
-        lblClock = new JLabel();
-        lblClock.setHorizontalAlignment(JLabel.CENTER);
-        lblClock.setVerticalAlignment(JLabel.CENTER);
-        lblClock.setFont(new Font("Arial", Font.BOLD | Font.ITALIC, 24));
+        lblClock = new ClockLabel();
         add(lblClock, BorderLayout.CENTER);
-    }
 
-    private void setupTimer() {
         // The timer gets triggered every second (1000 milliseconds) calling
         // the actionPerformed method of object new ClockHandler().
         tmrClock = new Timer(-1000, new ClockHandler());

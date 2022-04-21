@@ -22,31 +22,31 @@ public class SimpleClockMainGUI extends JFrame {
         pnlMain = new MainPanel();
         this.add(pnlMain);
 
-        mnubarMain = new JMenuBar();
+        this.mnubarMain = new JMenuBar();
 
-        mnuFile = new JMenu("File");
-        mnuFile.setMnemonic(KeyEvent.VK_F);
-        mnubarMain.add(mnuFile);
+        this.mnuFile = new JMenu("File");
+        this.mnuFile.setMnemonic(KeyEvent.VK_F);
+        this.mnubarMain.add(mnuFile);
 
-        mnuHelp = new JMenu("Help");
-        mnuHelp.setMnemonic(KeyEvent.VK_H);
-        mnubarMain.add(mnuHelp);
+        this.mnuHelp = new JMenu("Help");
+        this.mnuHelp.setMnemonic(KeyEvent.VK_H);
+        this.mnubarMain.add(mnuHelp);
 
-        setJMenuBar(mnubarMain);
-
-        mnuitmExit = new JMenuItem("Exit");
-        mnuitmExit.setMnemonic(KeyEvent.VK_X);
-        mnuitmExit.setAccelerator(
+        this.mnuitmExit = new JMenuItem("Exit");
+        this.mnuitmExit.setMnemonic(KeyEvent.VK_X);
+        this.mnuitmExit.setAccelerator(
                 KeyStroke.getKeyStroke(KeyEvent.VK_X, ActionEvent.ALT_MASK));
-        mnuFile.add(mnuitmExit);
+        this.mnuFile.add(mnuitmExit);
 
-        mnuitmAbout = new JMenuItem("About");
-        mnuitmAbout.setMnemonic(KeyEvent.VK_B);
-        mnuHelp.add(mnuitmAbout);
+        this.mnuitmAbout = new JMenuItem("About");
+        this.mnuitmAbout.setMnemonic(KeyEvent.VK_B);
+        this.mnuHelp.add(mnuitmAbout);
 
         //set up menu events
-        mnuitmExit.addActionListener(new ExitHandler());
-        mnuitmAbout.addActionListener(new AboutHandler());
+        this.mnuitmExit.addActionListener(new ExitHandler());
+        this.mnuitmAbout.addActionListener(new AboutHandler());
+
+        this.setJMenuBar(mnubarMain);
     }
 
     private void confirmExit() {
@@ -60,7 +60,6 @@ public class SimpleClockMainGUI extends JFrame {
             setVisible(false);
             System.exit(0);
         }
-
     }
 
     private class AboutHandler implements ActionListener {
@@ -131,7 +130,7 @@ public class SimpleClockMainGUI extends JFrame {
 
     public static void main(String[] args) {
         // Launch the main GUI on the event dispatching thread
-        SwingUtilities.invokeLater(
+       SwingUtilities.invokeLater(
                 new Runnable() {
                     @Override
                     public void run() {
