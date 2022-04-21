@@ -23,7 +23,7 @@ public class MainPanel extends JPanel {
 
         // The timer gets triggered every second (1000 milliseconds) calling
         // the actionPerformed method of object new ClockHandler().
-        tmrClock = new Timer(-1000, new ClockHandler());
+        tmrClock = new Timer(1000, new ClockHandler());
         // Start the timer
         tmrClock.start();
     }
