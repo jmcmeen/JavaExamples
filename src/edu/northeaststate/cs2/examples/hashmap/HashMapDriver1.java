@@ -4,7 +4,7 @@ import edu.northeaststate.cs1.labs.lab15.RegularPolygon;
 
 import java.util.HashMap;
 
-public class HashMapDriver {
+public class HashMapDriver1 {
     public static void main(String[] args) {
         HashMap<Integer, RegularPolygon> map = new HashMap<>();
 
@@ -16,7 +16,5 @@ public class HashMapDriver {
         RegularPolygon r = map.get(5);
 
         System.out.println(r.toString());
-
-
     }
 }
